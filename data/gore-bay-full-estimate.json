@@ -1,0 +1,2035 @@
+{
+  "project": "Gore Bay SJHC Long-Term Care",
+  "timestamp": "2026-02-16T09:54:10.250800",
+  "model": "claude-sonnet-4-20250514 + PyMuPDF + parametric",
+  "building_parameters": {
+    "name": "Gore Bay SJHC Long-Term Care",
+    "beds": 96,
+    "stories": 3,
+    "gross_area_sf": 72000,
+    "floor_area_sf": 24000,
+    "perimeter_lf": 800,
+    "height_ft": 36,
+    "construction_type": "IIA",
+    "occupancy": "I-2"
+  },
+  "total_cost": 21338795.0,
+  "cost_per_bed": 222279.11,
+  "cost_per_sf": 296.37,
+  "line_count": 198,
+  "division_totals": {
+    "01": 1800000.0,
+    "03": 2520000.0,
+    "04": 576000.0,
+    "05": 3024000.0,
+    "06": 504000.0,
+    "07": 1296000.0,
+    "08": 410100,
+    "09": 2735760.0,
+    "10": 360000.0,
+    "11": 96000,
+    "14": 468000.0,
+    "21": 243870,
+    "22": 929230.0,
+    "23": 1704580.0,
+    "25": 185000,
+    "26": 1318780.0,
+    "27": 931525,
+    "28": 435950.0,
+    "31": 720000.0,
+    "32": 576000.0,
+    "33": 504000.0
+  },
+  "source_breakdown": {
+    "claude_vision_equipment": 937000,
+    "claude_vision_plan": 1176530,
+    "claude_vision_schedule": 476400.0,
+    "parametric": 17485560.0,
+    "parametric+code": 482200.0,
+    "parametric+vision": 371005.0,
+    "pymupdf_schedule": 114750,
+    "pymupdf_schedule+parametric": 295350
+  },
+  "lines": [
+    {
+      "description": "General conditions, bonds, insurance, permits (7-8%) (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 25.0,
+      "total_cost": 1800000.0,
+      "csi_division": "01",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Foundations, grade beams, SOG, suspended slabs, stairs (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 35.0,
+      "total_cost": 2520000.0,
+      "csi_division": "03",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "CMU backup walls, brick veneer, stone accents (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 8.0,
+      "total_cost": 576000.0,
+      "csi_division": "04",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Structural steel, metal deck, stairs, railings, misc metals (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 42.0,
+      "total_cost": 3024000.0,
+      "csi_division": "05",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Blocking, millwork, casework, solid surface (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 7.0,
+      "total_cost": 504000.0,
+      "csi_division": "06",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "TPO roofing, insulation, air/vapour barrier, sealants, waterproofing (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 18.0,
+      "total_cost": 1296000.0,
+      "csi_division": "07",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Interior hollow metal door, 3'-0\" x 7'-0\", 90 min rated",
+      "quantity": 142,
+      "unit": "EA",
+      "unit_cost": 1250,
+      "total_cost": 177500,
+      "csi_division": "08",
+      "source": "pymupdf_schedule+parametric",
+      "confidence": "high"
+    },
+    {
+      "description": "Door hardware, commercial lockset + closer",
+      "quantity": 238,
+      "unit": "EA",
+      "unit_cost": 450,
+      "total_cost": 107100,
+      "csi_division": "08",
+      "source": "pymupdf_schedule",
+      "confidence": "high"
+    },
+    {
+      "description": "Interior wood door, 3'-0\" x 7'-0\", solid core",
+      "quantity": 71,
+      "unit": "EA",
+      "unit_cost": 850,
+      "total_cost": 60350,
+      "csi_division": "08",
+      "source": "pymupdf_schedule+parametric",
+      "confidence": "high"
+    },
+    {
+      "description": "Exterior aluminum door, 3'-0\" x 7'-0\", insulated",
+      "quantity": 23,
+      "unit": "EA",
+      "unit_cost": 2500,
+      "total_cost": 57500,
+      "csi_division": "08",
+      "source": "pymupdf_schedule+parametric",
+      "confidence": "high"
+    },
+    {
+      "description": "Window, aluminum frame, double-glazed, various sizes",
+      "quantity": 9,
+      "unit": "EA",
+      "unit_cost": 850,
+      "total_cost": 7650,
+      "csi_division": "08",
+      "source": "pymupdf_schedule",
+      "confidence": "high"
+    },
+    {
+      "description": "Metal stud/drywall, paint, VCT/carpet/ceramic, ACT ceilings, FRP (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 31.38,
+      "total_cost": 2259360.0,
+      "csi_division": "09",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Carpet tile",
+      "quantity": 67200.0,
+      "unit": "SF",
+      "unit_cost": 6.5,
+      "total_cost": 436800.0,
+      "csi_division": "09",
+      "source": "claude_vision_schedule",
+      "confidence": "medium"
+    },
+    {
+      "description": "Ceramic tile flooring",
+      "quantity": 2400.0,
+      "unit": "SF",
+      "unit_cost": 12.0,
+      "total_cost": 28800.0,
+      "csi_division": "09",
+      "source": "claude_vision_schedule",
+      "confidence": "medium"
+    },
+    {
+      "description": "VCT flooring",
+      "quantity": 2400.0,
+      "unit": "SF",
+      "unit_cost": 4.5,
+      "total_cost": 10800.0,
+      "csi_division": "09",
+      "source": "claude_vision_schedule",
+      "confidence": "medium"
+    },
+    {
+      "description": "Signage, toilet accessories, fire extinguishers, corner guards (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 5.0,
+      "total_cost": 360000.0,
+      "csi_division": "10",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Exhaust hood, Type I, 10' section",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 12000,
+      "total_cost": 96000,
+      "csi_division": "11",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "2 passenger elevators (required for 3-storey LTC) (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 6.5,
+      "total_cost": 468000.0,
+      "csi_division": "14",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Fire sprinkler piping, 1\" to 4\" steel",
+      "quantity": 10800,
+      "unit": "LF",
+      "unit_cost": 18,
+      "total_cost": 194400,
+      "csi_division": "21",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Sprinkler head, pendant, quick response",
+      "quantity": 553,
+      "unit": "EA",
+      "unit_cost": 85,
+      "total_cost": 47005,
+      "csi_division": "21",
+      "source": "parametric+vision",
+      "confidence": "medium"
+    },
+    {
+      "description": "Sprinkler head, pendant, standard",
+      "quantity": 29,
+      "unit": "EA",
+      "unit_cost": 85,
+      "total_cost": 2465,
+      "csi_division": "21",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Medical gas system (O2, vacuum, air)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 3.5,
+      "total_cost": 252000.0,
+      "csi_division": "22",
+      "source": "parametric+code",
+      "confidence": "medium"
+    },
+    {
+      "description": "Plumbing rough-in, waste & vent piping, cast iron/PVC",
+      "quantity": 5760,
+      "unit": "LF",
+      "unit_cost": 35,
+      "total_cost": 201600,
+      "csi_division": "22",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Domestic water piping, copper type L",
+      "quantity": 4320,
+      "unit": "LF",
+      "unit_cost": 28,
+      "total_cost": 120960,
+      "csi_division": "22",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Lavatory, wall-hung, commercial",
+      "quantity": 170,
+      "unit": "EA",
+      "unit_cost": 650,
+      "total_cost": 110500,
+      "csi_division": "22",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Water closet, floor-mounted, commercial",
+      "quantity": 111,
+      "unit": "EA",
+      "unit_cost": 850,
+      "total_cost": 94350,
+      "csi_division": "22",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Plumbing insulation",
+      "quantity": 8640,
+      "unit": "LF",
+      "unit_cost": 8,
+      "total_cost": 69120,
+      "csi_division": "22",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Shower stall, fiberglass, complete",
+      "quantity": 42,
+      "unit": "EA",
+      "unit_cost": 1200,
+      "total_cost": 50400,
+      "csi_division": "22",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Floor drain, 4\", cast iron",
+      "quantity": 38,
+      "unit": "EA",
+      "unit_cost": 350,
+      "total_cost": 13300,
+      "csi_division": "22",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Bathtub, cast iron, with fittings",
+      "quantity": 4,
+      "unit": "EA",
+      "unit_cost": 1800,
+      "total_cost": 7200,
+      "csi_division": "22",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Grease interceptor, 50 GPM",
+      "quantity": 2,
+      "unit": "EA",
+      "unit_cost": 2500,
+      "total_cost": 5000,
+      "csi_division": "22",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Service sink, floor-mounted",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 800,
+      "total_cost": 4800,
+      "csi_division": "22",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Hydronic piping, copper/steel, insulated",
+      "quantity": 5760,
+      "unit": "LF",
+      "unit_cost": 35,
+      "total_cost": 201600,
+      "csi_division": "23",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Boiler, gas-fired, 1500 MBH",
+      "quantity": 3,
+      "unit": "EA",
+      "unit_cost": 45000,
+      "total_cost": 135000,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "HVAC ductwork, galvanized steel, insulated, various sizes",
+      "quantity": 10800,
+      "unit": "LB",
+      "unit_cost": 12.0,
+      "total_cost": 129600.0,
+      "csi_division": "23",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Testing and balancing",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 1.5,
+      "total_cost": 108000.0,
+      "csi_division": "23",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "HVAC insulation, duct and pipe",
+      "quantity": 14400,
+      "unit": "SF",
+      "unit_cost": 6,
+      "total_cost": 86400,
+      "csi_division": "23",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Air handling unit, 10,000 CFM",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 75000,
+      "total_cost": 75000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Air handling unit, 10,000 CFM",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 75000,
+      "total_cost": 75000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Air handling unit, 10,000 CFM",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 75000,
+      "total_cost": 75000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Air handling unit, 10,000 CFM",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 75000,
+      "total_cost": 75000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Air handling unit, 10,000 CFM",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 75000,
+      "total_cost": 75000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Unit heater, hot water, wall-mounted",
+      "quantity": 15,
+      "unit": "EA",
+      "unit_cost": 2500,
+      "total_cost": 37500,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Exhaust fan, centrifugal, 500 CFM",
+      "quantity": 31,
+      "unit": "EA",
+      "unit_cost": 1200,
+      "total_cost": 37200,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Ceiling diffuser, 2x2, steel",
+      "quantity": 225,
+      "unit": "EA",
+      "unit_cost": 165,
+      "total_cost": 37125,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Circulating pump, inline, 1 HP",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 30000,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Expansion tank, 50 gallon",
+      "quantity": 2,
+      "unit": "EA",
+      "unit_cost": 8000,
+      "total_cost": 16000,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Radiator, hot water, baseboard",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 1800,
+      "total_cost": 14400,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Unit heater, hot water",
+      "quantity": 4,
+      "unit": "EA",
+      "unit_cost": 2500,
+      "total_cost": 10000,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Return air grille, 12x12",
+      "quantity": 63,
+      "unit": "EA",
+      "unit_cost": 125,
+      "total_cost": 7875,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Control valve, 2-way, motorized",
+      "quantity": 12,
+      "unit": "EA",
+      "unit_cost": 450,
+      "total_cost": 5400,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Equipment: Various HVAC symbols (Mechanical equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: HVAC (Mechanical Equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: COMM (Communications Equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: PLANT (Mechanical Plant)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: Various electrical panels (Electrical Distribution Panels)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: LP1 (Lighting Panel)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: LP2 (Lighting Panel)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: Various circuit numbers (Electrical circuits)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: P1 (Electrical Panel)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: P2 (Electrical Panel)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: TE1 (Telephone Equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: TE2 (Telephone Equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: Panel locations marked (Electrical Panels)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: MAIN_PANEL (Electrical Distribution Panel)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: TYPICAL BEDSIDE BED HEAD ELEVATION (Medical Equipment Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: Various panel designations (Electrical Panels)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: various fire alarm devices (fire alarm system components)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: Cable routing systems (Cable management)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: WH-1 (Water Heater)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: P-1 (Pump)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: UH-1 (Unit Heater)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: UH-2 (Unit Heater)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: UH-3 (Unit Heater)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: UH-4 (Unit Heater)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: HRV-1 (Heat Recovery Ventilator)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: MUA-1 (Make-Up Air Unit)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: visible but not clearly readable (HVAC Equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: multiple units shown (Air Handling Equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: B-1 (Boiler)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: B-2 (Boiler)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: B-3 (Boiler)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: P-2 (Pump)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: P-3 (Pump)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: HU-1 (Heating Unit)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EXP (Expansion Tank)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: visible equipment tags but illegible (HVAC equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: Various HVAC equipment (Mechanical equipment)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: HEATING PLANT AND GLYCOL SYSTEM CONTROL (Control System)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: SPACE TEMPERATURE CONTROL (Temperature Control System)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: UNIT HEATER CONTROL (Unit Heater Control)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: GLYCOL ROOM UNIT HEATER CONTROL (Unit Heater Control)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: FREEZE/FREEZER TEMPERATURE MONITORING (Temperature Monitoring System)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: DOMESTIC HOT WATER BOOSTER PUMP MONITORING (Pump Monitoring System)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: ICE-1 (Ice Machine)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: DW-1 (Dishwasher)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: GRILL-1 (Grill)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: FRYER-1 (Fryer)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: OVEN-1 (Oven)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: STEAM-1 (Steamer)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: HOOD-1 (Exhaust Hood)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: HOOD-2 (Exhaust Hood)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: CU-1 (Condensing Unit)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: CU-2 (Condensing Unit)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: CU-3 (Condensing Unit)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: REFRIG-1 (Walk-in Refrigerator)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: FREEZER-1 (Walk-in Freezer)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: PREP-1 (Prep Table)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: PREP-2 (Prep Table)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: WARMER-1 (Food Warmer)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: WARMER-2 (Food Warmer)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: G1 (Gas Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: G2 (Gas Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: G3 (Gas Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: G4 (Gas Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: G5 (Gas Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: G6 (Gas Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: G7 (Gas Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A1 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A2 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A3 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A4 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A5 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A6 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A7 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: A8 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: B1 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: B2 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: B3 (Utility Connection)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: Various numbered connection points (Electrical Connection Points)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKH-1 (Kitchen Hood)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKH-2 (Kitchen Hood)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKH-3 (Kitchen Hood)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKS-1 (Kitchen Sink)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKS-2 (Kitchen Sink)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKS-3 (Kitchen Sink)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKCT-1 (Cutting Table)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKCT-2 (Cutting Table)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKWT-1 (Work Table)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKWT-2 (Work Table)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKWS-1 (Wash Station)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Equipment: EKDW-1 (Dishwasher)",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 5000,
+      "total_cost": 5000,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "low"
+    },
+    {
+      "description": "Exhaust fan, roof-mounted",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 3500,
+      "total_cost": 3500,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Exhaust fan, roof-mounted",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 3500,
+      "total_cost": 3500,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Exhaust fan, roof-mounted",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 3500,
+      "total_cost": 3500,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Exhaust fan, roof-mounted",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 3500,
+      "total_cost": 3500,
+      "csi_division": "23",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Linear slot diffuser, 2-slot",
+      "quantity": 12,
+      "unit": "EA",
+      "unit_cost": 185,
+      "total_cost": 2220,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Thermostat, programmable, digital",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 250,
+      "total_cost": 1500,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Exhaust grille, aluminum",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 95,
+      "total_cost": 760,
+      "csi_division": "23",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "HVAC controls, DDC system, BACnet",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 185000,
+      "total_cost": 185000,
+      "csi_division": "25",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Electrical distribution, feeders and switchgear",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 5.0,
+      "total_cost": 360000.0,
+      "csi_division": "26",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Lighting controls, occupancy sensors, dimming",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 2.5,
+      "total_cost": 180000.0,
+      "csi_division": "26",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Electrical conduit and wire, branch circuits",
+      "quantity": 8640,
+      "unit": "LF",
+      "unit_cost": 18,
+      "total_cost": 155520,
+      "csi_division": "26",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "LED troffer, 2x4, commercial",
+      "quantity": 821,
+      "unit": "EA",
+      "unit_cost": 185,
+      "total_cost": 151885,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Emergency generator, 200kW diesel, with ATS",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 115000,
+      "total_cost": 115000,
+      "csi_division": "26",
+      "source": "parametric+code",
+      "confidence": "medium"
+    },
+    {
+      "description": "Duplex receptacle, 20A, with plate",
+      "quantity": 621,
+      "unit": "EA",
+      "unit_cost": 125,
+      "total_cost": 77625,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Emergency light, LED, battery",
+      "quantity": 100,
+      "unit": "EA",
+      "unit_cost": 450,
+      "total_cost": 45000,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Panel board, 225A, 42 circuit",
+      "quantity": 12,
+      "unit": "EA",
+      "unit_cost": 3500,
+      "total_cost": 42000,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Motor control center",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 35000,
+      "total_cost": 35000,
+      "csi_division": "26",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Toggle switch, single pole, 20A",
+      "quantity": 300,
+      "unit": "EA",
+      "unit_cost": 95,
+      "total_cost": 28500,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Main distribution panel, 800A",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 25000,
+      "total_cost": 25000,
+      "csi_division": "26",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Exit sign, LED, battery backup",
+      "quantity": 63,
+      "unit": "EA",
+      "unit_cost": 350,
+      "total_cost": 22050,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Dry-type transformer, 150 kVA",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 18000,
+      "total_cost": 18000,
+      "csi_division": "26",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Uninterruptible power supply, 30kVA",
+      "quantity": 1,
+      "unit": "EA",
+      "unit_cost": 15000,
+      "total_cost": 15000,
+      "csi_division": "26",
+      "source": "claude_vision_equipment",
+      "confidence": "high"
+    },
+    {
+      "description": "Electrical Connection Point (from drawings)",
+      "quantity": 120,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 12000,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Mechanical Connection (from drawings)",
+      "quantity": 72,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 7200,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Circuit Breakers (from drawings)",
+      "quantity": 42,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 4200,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Pendant fixture, LED",
+      "quantity": 12,
+      "unit": "EA",
+      "unit_cost": 350,
+      "total_cost": 4200,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Equipment Connection (from drawings)",
+      "quantity": 35,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 3500,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Exit sign, LED",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 350,
+      "total_cost": 2800,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Exit/emergency combo",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 400,
+      "total_cost": 2400,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Wall sconce, LED",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 250,
+      "total_cost": 2000,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Kitchen Appliances (from drawings)",
+      "quantity": 16,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 1600,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Windows (from drawings)",
+      "quantity": 15,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 1500,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Water Connection (from drawings)",
+      "quantity": 10,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 1000,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Communication Device (from drawings)",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 800,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Electrical Panel Connection (from drawings)",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 800,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Electrical Panels/Boxes (from drawings)",
+      "quantity": 8,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 800,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Gas Connection (from drawings)",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 600,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Hairdressing Chair (from drawings)",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 600,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Roof Vents (from drawings)",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 600,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Communication Outlets (from drawings)",
+      "quantity": 5,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 500,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Doors (from drawings)",
+      "quantity": 4,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 400,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Mechanical Equipment (from drawings)",
+      "quantity": 4,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 400,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Refrigerator (from drawings)",
+      "quantity": 3,
+      "unit": "EA",
+      "unit_cost": 100,
+      "total_cost": 300,
+      "csi_division": "26",
+      "source": "claude_vision_plan",
+      "confidence": "low"
+    },
+    {
+      "description": "Structured cabling, Cat6A, horizontal",
+      "quantity": 2160,
+      "unit": "EA",
+      "unit_cost": 350,
+      "total_cost": 756000,
+      "csi_division": "27",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Nurse call system, complete",
+      "quantity": 96,
+      "unit": "EA",
+      "unit_cost": 1200,
+      "total_cost": 115200,
+      "csi_division": "27",
+      "source": "parametric+code",
+      "confidence": "medium"
+    },
+    {
+      "description": "PA/intercom system",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 45000,
+      "total_cost": 45000,
+      "csi_division": "27",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Communication outlet",
+      "quantity": 38,
+      "unit": "EA",
+      "unit_cost": 175,
+      "total_cost": 6650,
+      "csi_division": "27",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Data outlet, Cat6, with plate",
+      "quantity": 27,
+      "unit": "EA",
+      "unit_cost": 175,
+      "total_cost": 4725,
+      "csi_division": "27",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Telephone outlet",
+      "quantity": 15,
+      "unit": "EA",
+      "unit_cost": 150,
+      "total_cost": 2250,
+      "csi_division": "27",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Nurse call station",
+      "quantity": 2,
+      "unit": "EA",
+      "unit_cost": 850,
+      "total_cost": 1700,
+      "csi_division": "27",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Fire alarm system, addressable, complete",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 4.5,
+      "total_cost": 324000.0,
+      "csi_division": "28",
+      "source": "parametric+vision",
+      "confidence": "medium"
+    },
+    {
+      "description": "Security system, access control + CCTV",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 85000,
+      "total_cost": 85000,
+      "csi_division": "28",
+      "source": "parametric",
+      "confidence": "medium"
+    },
+    {
+      "description": "Fire alarm device, addressable",
+      "quantity": 98,
+      "unit": "EA",
+      "unit_cost": 275,
+      "total_cost": 26950,
+      "csi_division": "28",
+      "source": "claude_vision_plan",
+      "confidence": "high"
+    },
+    {
+      "description": "Excavation, structural fill, grading, compaction (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 10.0,
+      "total_cost": 720000.0,
+      "csi_division": "31",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Asphalt paving, concrete curbs/walks, landscaping, fencing (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 8.0,
+      "total_cost": 576000.0,
+      "csi_division": "32",
+      "source": "parametric",
+      "confidence": "low"
+    },
+    {
+      "description": "Water, sanitary sewer, storm sewer, gas, hydro connections (parametric)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 7.0,
+      "total_cost": 504000.0,
+      "csi_division": "33",
+      "source": "parametric",
+      "confidence": "low"
+    }
+  ]
+}
