@@ -1,0 +1,991 @@
+{
+  "project": "Gore Bay SJHC Long-Term Care (96-bed)",
+  "timestamp": "2026-02-16T11:05:40.871070",
+  "method": "Hanscomb Class A calibrated + PLA civil estimate + Claude Vision verification",
+  "hanscomb_reference": "LON1138, Hanscomb Limited, Dec 4 2024, 64-bed 51,726 SF",
+  "building_parameters": {
+    "name": "Gore Bay SJHC Long-Term Care (96-bed)",
+    "beds": 96,
+    "stories": 3,
+    "gross_area_sf": 72000,
+    "floor_area_sf": 24000,
+    "perimeter_lf": 800,
+    "height_ft": 36,
+    "construction_type": "IIA",
+    "occupancy": "I-2"
+  },
+  "total_cost": 45135316.08,
+  "cost_per_bed": 470159.54,
+  "cost_per_sf": 626.88,
+  "line_count": 93,
+  "element_totals": {
+    "A11_foundations": 1164791.74,
+    "A13_special": 832330,
+    "A21_lowest_floor": 322720.0,
+    "A22_upper_floor": 1842000.0,
+    "A23_roof": 1462462.1,
+    "A32_walls": 3095706.56,
+    "A33_entrances": 89600,
+    "A34_roof_covering": 527701.1,
+    "A35_projections": 696496.1,
+    "B11_partitions": 2064950.0,
+    "B12_doors": 1042095,
+    "B21_floor": 646669.8,
+    "B22_ceiling": 652785.48,
+    "B23_wall": 540185.2,
+    "B31_fittings": 1201932.0,
+    "B32_equipment": 1399700,
+    "C11_plumbing": 2541348.0,
+    "C12_fire_protection": 558000.0,
+    "C13_hvac": 6924400.0,
+    "C14_controls": 715680.0,
+    "C21_elec_dist": 1744560.0,
+    "C22_lighting": 2439360.0,
+    "C23_systems": 1862640.0,
+    "D11_site": 3549900,
+    "Z11_general": 3436811,
+    "Z12_fee": 1031043,
+    "Z21_design_allowance": 1031043,
+    "Z_travel": 1718406
+  },
+  "source_breakdown": {
+    "hanscomb_direct": 23841759.24,
+    "hanscomb_scaled": 8360753.84,
+    "hanscomb_pct": 7217303,
+    "pla_estimate": 3549900,
+    "hanscomb_scaled+pla": 1100000,
+    "hanscomb_adjusted": 1065600.0
+  },
+  "lines": [
+    {
+      "description": "Strip footings (concrete, formwork, rebar)",
+      "quantity": 960,
+      "unit": "LF",
+      "unit_cost": 138.48,
+      "total_cost": 132940.8,
+      "element": "A11_foundations",
+      "source": "hanscomb_scaled",
+      "confidence": "high"
+    },
+    {
+      "description": "Pad footings (39 pads scaled to 96-bed)",
+      "quantity": 58,
+      "unit": "EA",
+      "unit_cost": 898.72,
+      "total_cost": 52125.76,
+      "element": "A11_foundations",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Foundation walls",
+      "quantity": 880,
+      "unit": "LF",
+      "unit_cost": 371.6,
+      "total_cost": 327008.0,
+      "element": "A11_foundations",
+      "source": "hanscomb_scaled",
+      "confidence": "high"
+    },
+    {
+      "description": "Piers",
+      "quantity": 58,
+      "unit": "EA",
+      "unit_cost": 1088.21,
+      "total_cost": 63116.18,
+      "element": "A11_foundations",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Earthwork (excavation, backfill with granular)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 507198,
+      "total_cost": 507198,
+      "element": "A11_foundations",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Extra/over (stepped foundations, rigid insulation)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 68483,
+      "total_cost": 68483,
+      "element": "A11_foundations",
+      "source": "hanscomb_scaled",
+      "confidence": "low"
+    },
+    {
+      "description": "Weeping tile & granular surround",
+      "quantity": 960,
+      "unit": "LF",
+      "unit_cost": 14.5,
+      "total_cost": 13920.0,
+      "element": "A11_foundations",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Rock excavation allowance (N. Ontario)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 807330,
+      "total_cost": 807330,
+      "element": "A13_special",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Dewatering, sediment & erosion control",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 25000,
+      "total_cost": 25000,
+      "element": "A13_special",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Concrete slab on grade, 5\" c/w WWM, granulars, VB",
+      "quantity": 24000,
+      "unit": "SF",
+      "unit_cost": 10.9,
+      "total_cost": 261600.0,
+      "element": "A21_lowest_floor",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Extra/over for perimeter insulation & slab thickening",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 61120,
+      "total_cost": 61120,
+      "element": "A21_lowest_floor",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Suspended concrete on metal deck (2 floors)",
+      "quantity": 48000,
+      "unit": "SF",
+      "unit_cost": 22.2,
+      "total_cost": 1065600.0,
+      "element": "A22_upper_floor",
+      "source": "hanscomb_adjusted",
+      "confidence": "medium"
+    },
+    {
+      "description": "Structural steel for suspended floors",
+      "quantity": 120000,
+      "unit": "LBS",
+      "unit_cost": 3.4,
+      "total_cost": 408000.0,
+      "element": "A22_upper_floor",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Stairs (6 flights for 3-storey, 2 stairwells)",
+      "quantity": 6,
+      "unit": "FLT",
+      "unit_cost": 10200,
+      "total_cost": 61200,
+      "element": "A22_upper_floor",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Fireproofing",
+      "quantity": 48000,
+      "unit": "SF",
+      "unit_cost": 6.4,
+      "total_cost": 307200.0,
+      "element": "A22_upper_floor",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Prefab metal roof trusses @ 24\" OC with 4' overhangs",
+      "quantity": 27599,
+      "unit": "SF",
+      "unit_cost": 42.3,
+      "total_cost": 1167437.7,
+      "element": "A23_roof",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Structural steel for roof",
+      "quantity": 31186,
+      "unit": "LBS",
+      "unit_cost": 3.4,
+      "total_cost": 106032.4,
+      "element": "A23_roof",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "1.5\" metal deck",
+      "quantity": 29530,
+      "unit": "SF",
+      "unit_cost": 6.4,
+      "total_cost": 188992.0,
+      "element": "A23_roof",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Exterior wall W1 (stone veneer assembly)",
+      "quantity": 4680,
+      "unit": "SF",
+      "unit_cost": 92.38,
+      "total_cost": 432338.4,
+      "element": "A32_walls",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Exterior wall W2 (Luxyclad metal siding assembly)",
+      "quantity": 25352,
+      "unit": "SF",
+      "unit_cost": 61.83,
+      "total_cost": 1567514.16,
+      "element": "A32_walls",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Punched windows",
+      "quantity": 3655,
+      "unit": "SF",
+      "unit_cost": 95.0,
+      "total_cost": 347225.0,
+      "element": "A32_walls",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Extra/over for operable windows",
+      "quantity": 125,
+      "unit": "EA",
+      "unit_cost": 1200.0,
+      "total_cost": 150000.0,
+      "element": "A32_walls",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Curtainwall (double glazed)",
+      "quantity": 3105,
+      "unit": "SF",
+      "unit_cost": 140.0,
+      "total_cost": 434700.0,
+      "element": "A32_walls",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Stone sills, louvers, lintels, caulking, flashing",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 163929,
+      "total_cost": 163929,
+      "element": "A32_walls",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Aluminum framed glazed doors c/w hardware",
+      "quantity": 12,
+      "unit": "LVS",
+      "unit_cost": 4800,
+      "total_cost": 57600,
+      "element": "A33_entrances",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Insulated HM exterior doors c/w frame, hardware",
+      "quantity": 8,
+      "unit": "LVS",
+      "unit_cost": 4000,
+      "total_cost": 32000,
+      "element": "A33_entrances",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "SBS modified bitumen roofing, rigid insulation, vapour barrier",
+      "quantity": 29530,
+      "unit": "SF",
+      "unit_cost": 17.87,
+      "total_cost": 527701.1,
+      "element": "A34_roof_covering",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Soffits (Luxyclad), fascia, trims, column cladding",
+      "quantity": 13355,
+      "unit": "SF",
+      "unit_cost": 46.42,
+      "total_cost": 619939.1,
+      "element": "A35_projections",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Eavestroughs, downspouts, splashpads",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 76557,
+      "total_cost": 76557,
+      "element": "A35_projections",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Interior partitions (P1/P1a/P2/P2a metal stud + GWB assemblies)",
+      "quantity": 84521,
+      "unit": "SF",
+      "unit_cost": 20.0,
+      "total_cost": 1690420.0,
+      "element": "B11_partitions",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Glazed partitions",
+      "quantity": 1437,
+      "unit": "SF",
+      "unit_cost": 68.0,
+      "total_cost": 97716.0,
+      "element": "B11_partitions",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Folding partitions (dining, chapel)",
+      "quantity": 2,
+      "unit": "EA",
+      "unit_cost": 68810,
+      "total_cost": 137620,
+      "element": "B11_partitions",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Extra/over (blocking, firestopping, sealants, fire rated GWB)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 139194,
+      "total_cost": 139194,
+      "element": "B11_partitions",
+      "source": "hanscomb_scaled",
+      "confidence": "low"
+    },
+    {
+      "description": "Hollow metal doors c/w HM frame, hardware, paint",
+      "quantity": 139,
+      "unit": "LVS",
+      "unit_cost": 2750,
+      "total_cost": 382250,
+      "element": "B12_doors",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Solid core wood doors c/w painted HM frame, hardware",
+      "quantity": 191,
+      "unit": "LVS",
+      "unit_cost": 3000,
+      "total_cost": 573000,
+      "element": "B12_doors",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Extra/over for fire rating, vision panels",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 42645,
+      "total_cost": 42645,
+      "element": "B12_doors",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Automatic door operators",
+      "quantity": 13,
+      "unit": "EA",
+      "unit_cost": 3400,
+      "total_cost": 44200,
+      "element": "B12_doors",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Floor finishes (sheet vinyl SV-1 to SV-5, porcelain, rubber)",
+      "quantity": 63399,
+      "unit": "SF",
+      "unit_cost": 10.2,
+      "total_cost": 646669.8,
+      "element": "B21_floor",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Ceiling finishes (ACT, GWB, wood plank, bulkheads)",
+      "quantity": 58077,
+      "unit": "SF",
+      "unit_cost": 11.24,
+      "total_cost": 652785.48,
+      "element": "B22_ceiling",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Wall finishes (paint, Acrovyn/Whiterock wall protection, SS panels)",
+      "quantity": 142154,
+      "unit": "SF",
+      "unit_cost": 3.8,
+      "total_cost": 540185.2,
+      "element": "B23_wall",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Millwork (cabinets, wardrobes, vanities, windowsills)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 6.5,
+      "total_cost": 468000.0,
+      "element": "B31_fittings",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Specialties (washroom acc, corner guards, crashrail, handrail)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 7.0,
+      "total_cost": 504000.0,
+      "element": "B31_fittings",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Rough carpentry, misc metals",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 1.25,
+      "total_cost": 90000.0,
+      "element": "B31_fittings",
+      "source": "hanscomb_direct",
+      "confidence": "low"
+    },
+    {
+      "description": "Window coverings (roller shades)",
+      "quantity": 6760,
+      "unit": "SF",
+      "unit_cost": 20.7,
+      "total_cost": 139932.0,
+      "element": "B31_fittings",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Kitchen + laundry equipment (scaled to 96-bed)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 1100000,
+      "total_cost": 1100000,
+      "element": "B32_equipment",
+      "source": "hanscomb_scaled+pla",
+      "confidence": "high"
+    },
+    {
+      "description": "Patient lifts incl. structural supports",
+      "quantity": 6,
+      "unit": "EA",
+      "unit_cost": 12750,
+      "total_cost": 76500,
+      "element": "B32_equipment",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Patient lift structural support (future rooms)",
+      "quantity": 93,
+      "unit": "EA",
+      "unit_cost": 2400,
+      "total_cost": 223200,
+      "element": "B32_equipment",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Plumbing fixtures and rough-in (scaled from Hanscomb 168 fixtures)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 8.341,
+      "total_cost": 600552.0,
+      "element": "C11_plumbing",
+      "source": "hanscomb_scaled",
+      "confidence": "high"
+    },
+    {
+      "description": "Domestic water (3 DHW heaters, storage tanks, pumps, piping)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 11.5235,
+      "total_cost": 829692.0,
+      "element": "C11_plumbing",
+      "source": "hanscomb_scaled",
+      "confidence": "high"
+    },
+    {
+      "description": "Sanitary drainage & vent",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 5.8045,
+      "total_cost": 417924.0,
+      "element": "C11_plumbing",
+      "source": "hanscomb_scaled",
+      "confidence": "high"
+    },
+    {
+      "description": "Storm drainage",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 0.9784999999999999,
+      "total_cost": 70452.0,
+      "element": "C11_plumbing",
+      "source": "hanscomb_scaled",
+      "confidence": "medium"
+    },
+    {
+      "description": "Propane gas system (2x 5000 gal tanks, vaporizers, piping)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 8.188999999999998,
+      "total_cost": 589608.0,
+      "element": "C11_plumbing",
+      "source": "hanscomb_scaled",
+      "confidence": "high"
+    },
+    {
+      "description": "Miscellaneous (setting out, tagging, testing)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 0.46,
+      "total_cost": 33120.0,
+      "element": "C11_plumbing",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Fire main (DCV, FDC, alarm check valve)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 0.62,
+      "total_cost": 44640.0,
+      "element": "C12_fire_protection",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Sprinkler system incl. attic",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 6.71,
+      "total_cost": 483120.0,
+      "element": "C12_fire_protection",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Fire extinguishers and kitchen suppression",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 0.42,
+      "total_cost": 30240.0,
+      "element": "C12_fire_protection",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Heat generation (2x propane condensing boilers 3840 MBH, pumps, venting)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 4.88,
+      "total_cost": 351360.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Liquid heat transfer - main (hydraulic separator, pumps, VFD, main piping)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 2.5,
+      "total_cost": 180000.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Liquid heat transfer - perimeter/reheating (7,470 LF piping, RCP baseboard, booster coils)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 13.49,
+      "total_cost": 971280.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Liquid heat transfer - glycol heating (HX, pumps, VFD, piping)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 2.08,
+      "total_cost": 149760.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Air distribution equipment (4x AHU w/ERV $420K ea, DX cooling, MUA, UV)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 38.24,
+      "total_cost": 2753280.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Exhaust & ventilation",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 2.0,
+      "total_cost": 144000.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Air distribution ductwork & devices (58,000 LB duct, insulation, booster coils, diffusers)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 26.81,
+      "total_cost": 1930320.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Kitchen exhaust",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 40000,
+      "total_cost": 40000,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Humidification (4x electric)",
+      "quantity": 4,
+      "unit": "EA",
+      "unit_cost": 22500,
+      "total_cost": 90000,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "24/7 cooling (IT rooms)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 30000,
+      "total_cost": 30000,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Testing, adjusting & balancing",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 1.7,
+      "total_cost": 122400.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Miscellaneous mechanical (permits, sleeving, identification, commissioning)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 2.25,
+      "total_cost": 162000.0,
+      "element": "C13_hvac",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "DDC controls \u2014 boilers, pumps, AHU, zones, BAS",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 9.94,
+      "total_cost": 715680.0,
+      "element": "C14_controls",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Normal power distribution (switchboard, panels)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 3.27,
+      "total_cost": 235440.0,
+      "element": "C21_elec_dist",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Emergency power distribution (250kW generator, ATS, panels)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 16.84,
+      "total_cost": 1212480.0,
+      "element": "C21_elec_dist",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Feeders (normal, emergency, UPS)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 3.2,
+      "total_cost": 230400.0,
+      "element": "C21_elec_dist",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Grounding, bonding, metering, arc flash study",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 0.92,
+      "total_cost": 66240.0,
+      "element": "C21_elec_dist",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Light fixtures supply + installation (all types)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 21.76,
+      "total_cost": 1566720.0,
+      "element": "C22_lighting",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Lighting control (occupancy sensors, control stations, power packs)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 4.26,
+      "total_cost": 306720.0,
+      "element": "C22_lighting",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Emergency and exit lighting",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 0.3,
+      "total_cost": 21600.0,
+      "element": "C22_lighting",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Power outlets, devices & direct connections",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 5.82,
+      "total_cost": 419040.0,
+      "element": "C22_lighting",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Mechanical equipment power connections",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 1.74,
+      "total_cost": 125280.0,
+      "element": "C22_lighting",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Fire alarm system (FACP, detectors, horn/strobes, wiring)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 4.5,
+      "total_cost": 324000.0,
+      "element": "C23_systems",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Communications & IT (data/voice outlets, cable tray, Cat-6, racks)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 5.8,
+      "total_cost": 417600.0,
+      "element": "C23_systems",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Nurse call system (patient stations, pull cords, master station)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 7.07,
+      "total_cost": 509040.0,
+      "element": "C23_systems",
+      "source": "hanscomb_direct",
+      "confidence": "high"
+    },
+    {
+      "description": "Security (access control, CCTV, intercom)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 1.35,
+      "total_cost": 97200.0,
+      "element": "C23_systems",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Electrical miscellaneous (permits, testing, as-builts, sleeving)",
+      "quantity": 72000,
+      "unit": "SF",
+      "unit_cost": 7.15,
+      "total_cost": 514800.0,
+      "element": "C23_systems",
+      "source": "hanscomb_direct",
+      "confidence": "medium"
+    },
+    {
+      "description": "General requirements (10% \u2014 supervision, insurance, bonds, temp facilities)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 3436811,
+      "total_cost": 3436811,
+      "element": "Z11_general",
+      "source": "hanscomb_pct",
+      "confidence": "high"
+    },
+    {
+      "description": "Contractor fee (3%)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 1031043,
+      "total_cost": 1031043,
+      "element": "Z12_fee",
+      "source": "hanscomb_pct",
+      "confidence": "high"
+    },
+    {
+      "description": "Design & pricing allowance (3%)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 1031043,
+      "total_cost": 1031043,
+      "element": "Z21_design_allowance",
+      "source": "hanscomb_pct",
+      "confidence": "medium"
+    },
+    {
+      "description": "Building earthwork (clearing, excavation, granular fill)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 692080,
+      "total_cost": 692080,
+      "element": "D11_site",
+      "source": "pla_estimate",
+      "confidence": "high"
+    },
+    {
+      "description": "Parking & road (grading, paving, curbs, sidewalks, slabs)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 1549500,
+      "total_cost": 1549500,
+      "element": "D11_site",
+      "source": "pla_estimate",
+      "confidence": "high"
+    },
+    {
+      "description": "Asphalt (base HL8, surface HL3, tack coat)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 478000,
+      "total_cost": 478000,
+      "element": "D11_site",
+      "source": "pla_estimate",
+      "confidence": "high"
+    },
+    {
+      "description": "Stormwater management (ditching, pond, sewers, culverts, headwalls)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 549000,
+      "total_cost": 549000,
+      "element": "D11_site",
+      "source": "pla_estimate",
+      "confidence": "high"
+    },
+    {
+      "description": "Electrical excavation (transformer vault, trenching for hydro & lighting)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 83000,
+      "total_cost": 83000,
+      "element": "D11_site",
+      "source": "pla_estimate",
+      "confidence": "medium"
+    },
+    {
+      "description": "Landscaping (topsoil, sod, shrubs, fencing)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 198320,
+      "total_cost": 198320,
+      "element": "D11_site",
+      "source": "pla_estimate",
+      "confidence": "medium"
+    },
+    {
+      "description": "Travel and lodging allowance (5% on building cost \u2014 Northern Ontario)",
+      "quantity": 1,
+      "unit": "LS",
+      "unit_cost": 1718406,
+      "total_cost": 1718406,
+      "element": "Z_travel",
+      "source": "hanscomb_pct",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "wall_types": {
+    "W1": {
+      "description": "Stone veneer with mortar and mesh, drainage/weather barrier, 1/2\" plywood, 6\" vertical Z-girt @ 2' OC, 5-1/2\" urethane insulation, 1/2\" densglass sheathing, 6\" metal studs @ 16\" OC, 5/8\" type X GWB",
+      "rate_per_sf": 92.38,
+      "area_sf": 1678,
+      "total": 155010,
+      "components": [
+        {
+          "material": "Stone veneer with mortar and mesh",
+          "rate": 56.0,
+          "unit": "SF"
+        },
+        {
+          "material": "Wall backup assembly (Z-girt, urethane, densglass, studs, GWB)",
+          "rate": 32.6,
+          "unit": "SF"
+        }
+      ]
+    },
+    "W1a": {
+      "description": "Extra/over for stone cladding at chapel",
+      "rate_per_sf": 52.1,
+      "area_sf": 154,
+      "total": 8020
+    },
+    "W2": {
+      "description": "Horizontal metal wood siding (Luxyclad), 1\" galv Z-girts, 6\" vertical Z-girt, 5-1/2\" urethane insulation, 1/2\" densglass sheathing, 6\" metal studs @ 16\" OC, 5/8\" type X GWB",
+      "rate_per_sf": 61.83,
+      "area_sf": 12146,
+      "total": 750940,
+      "components": [
+        {
+          "material": "Luxyclad horizontal metal wood siding",
+          "rate": 40.0,
+          "unit": "SF"
+        },
+        {
+          "material": "Wall backup assembly (Z-girt, urethane, densglass, studs, GWB)",
+          "rate": 28.1,
+          "unit": "SF"
+        }
+      ]
+    }
+  },
+  "partition_types": {
+    "P1": {
+      "description": "5/8\" GWB + 3-5/8\" metal studs @ 16\" OC + 5/8\" GWB",
+      "rate_per_sf": 16.0,
+      "area_sf": 1606
+    },
+    "P1a": {
+      "description": "5/8\" GWB + 3-5/8\" metal studs @ 16\" OC + mineral wool + 5/8\" GWB",
+      "rate_per_sf": 17.2,
+      "area_sf": 4780
+    },
+    "P1b": {
+      "description": "5/8\" GWB + 3-5/8\" metal studs @ 16\" OC + 5/8\" GWB",
+      "rate_per_sf": 16.0,
+      "area_sf": 1520
+    },
+    "P2": {
+      "description": "5/8\" GWB + 6\" metal studs @ 16\" OC + 5/8\" GWB",
+      "rate_per_sf": 17.7,
+      "area_sf": 15125
+    },
+    "P2a": {
+      "description": "5/8\" GWB + 6\" metal studs @ 16\" OC + 5/8\" GWB",
+      "rate_per_sf": 17.7,
+      "area_sf": 35679
+    },
+    "P3": {
+      "description": "8\" concrete block partition + reinforcing",
+      "rate_per_sf": 26.24,
+      "area_sf": 431
+    },
+    "F4": {
+      "description": "5/8\" GWB + 3-5/8\" metal studs @ 16\" OC (one side only)",
+      "rate_per_sf": 10.7,
+      "area_sf": 1028
+    },
+    "F5": {
+      "description": "5/8\" GWB + 6\" metal studs @ 16\" OC (assumed)",
+      "rate_per_sf": 12.4,
+      "area_sf": 551
+    },
+    "Glazed": {
+      "description": "Glazing & frame",
+      "rate_per_sf": 68.0,
+      "area_sf": 1033
+    }
+  },
+  "door_types": {
+    "HM_single_36x84": {
+      "description": "HM door c/w HM frame, hardware, paint",
+      "rate_each": 2700,
+      "count": 11
+    },
+    "HM_single_38x84": {
+      "description": "HM door c/w HM frame, hardware, paint",
+      "rate_each": 2700,
+      "count": 42
+    },
+    "HM_single_44x84": {
+      "description": "HM door c/w HM frame, hardware, paint",
+      "rate_each": 2775,
+      "count": 4
+    },
+    "HM_single_48x84": {
+      "description": "HM door c/w HM frame, hardware, paint",
+      "rate_each": 2800,
+      "count": 4
+    },
+    "HM_pair_36x84": {
+      "description": "HM pair doors c/w HM frame, hardware, paint",
+      "rate_each": 5400,
+      "count": 11
+    },
+    "HM_pair_38_30x84": {
+      "description": "HM pair doors (unequal)",
+      "rate_each": 5300,
+      "count": 1
+    },
+    "HM_pair_44x84": {
+      "description": "HM pair doors",
+      "rate_each": 5550,
+      "count": 4
+    },
+    "WD_single_38x84": {
+      "description": "Solid core wood veneer c/w painted HM frame",
+      "rate_each": 2950,
+      "count": 62
+    },
+    "WD_single_42x84_pocket": {
+      "description": "Solid core wood pocket door",
+      "rate_each": 3350,
+      "count": 1
+    },
+    "WD_single_48x84": {
+      "description": "Solid core wood veneer c/w painted HM frame",
+      "rate_each": 3050,
+      "count": 69
+    },
+    "WD_pair_36x84": {
+      "description": "Solid core wood pair doors",
+      "rate_each": 5900,
+      "count": 1
+    },
+    "WD_pair_38x84": {
+      "description": "Solid core wood pair doors",
+      "rate_each": 5900,
+      "count": 2
+    },
+    "Auto_operator": {
+      "description": "Automatic door operator",
+      "rate_each": 3400,
+      "count": 9
+    }
+  },
+  "floor_finishes": {
+    "SV-1": {
+      "description": "Wood grain sheet vinyl",
+      "rate_per_sf": 8.0,
+      "area_sf": 14546
+    },
+    "SV-2": {
+      "description": "Safety sheet vinyl",
+      "rate_per_sf": 14.2,
+      "area_sf": 979
+    },
+    "SV-3": {
+      "description": "Homogeneous sheet vinyl",
+      "rate_per_sf": 7.85,
+      "area_sf": 10740
+    },
+    "SV-4": {
+      "description": "Safety sheet vinyl",
+      "rate_per_sf": 15.8,
+      "area_sf": 1944
+    },
+    "SV-5": {
+      "description": "Safety sheet vinyl",
+      "rate_per_sf": 9.5,
+      "area_sf": 4860
+    }
+  },
+  "roof_construction": {
+    "trusses": {
+      "description": "Prefab metal roof trusses @ 24\" OC with 4' overhangs",
+      "rate_per_sf": 42.3,
+      "area_sf": 59970,
+      "total": 2536730
+    },
+    "structural_steel": {
+      "description": "Structural steel for roof",
+      "rate_per_lb": 3.4,
+      "weight_lbs": 67855,
+      "total": 230710
+    },
+    "connections": {
+      "description": "Allowance for connections",
+      "rate_per_lb": 3.4,
+      "weight_lbs": 6786,
+      "total": 23070
+    },
+    "metal_deck": {
+      "description": "1.5\" metal deck",
+      "rate_per_sf": 6.4,
+      "area_sf": 64462,
+      "total": 412560
+    }
+  },
+  "windows": {
+    "punched": {
+      "description": "Punched windows",
+      "rate_per_sf": 95.0,
+      "area_sf": 2626,
+      "total": 249470
+    },
+    "operable_extra": {
+      "description": "Extra/over for operable",
+      "rate_each": 1200,
+      "count": 90,
+      "total": 108000
+    },
+    "curtainwall": {
+      "description": "Double glazed curtainwall",
+      "rate_per_sf": 140.0,
+      "area_sf": 2231,
+      "total": 312340
+    }
+  },
+  "elemental_rates_per_sf": {
+    "A1_substructure": 56.38,
+    "A11_foundations": 44.82,
+    "A13_special_conditions": 11.56,
+    "A2_structure": 81.64,
+    "A21_lowest_floor": 10.94,
+    "A22_upper_floor": 8.78,
+    "A23_roof": 61.92,
+    "A3_exterior_enclosure": 66.28,
+    "A32_walls_above_grade": 32.74,
+    "A33_entrances": 1.59,
+    "A34_roof_covering": 22.27,
+    "A35_projections": 9.67,
+    "B1_partitions_doors": 40.6,
+    "B11_partitions": 26.46,
+    "B12_doors": 14.14,
+    "B2_finishes": 25.56,
+    "B21_floor": 8.98,
+    "B22_ceiling": 9.07,
+    "B23_wall": 7.51,
+    "B3_fittings_equipment": 35.64,
+    "B31_fittings": 14.57,
+    "B32_equipment": 21.07,
+    "C1_mechanical": 149.3,
+    "C11_plumbing": 36.67,
+    "C12_fire_protection": 7.75,
+    "C13_hvac": 94.95,
+    "C14_controls": 9.94,
+    "C2_electrical": 84.11,
+    "C21_service_distribution": 24.23,
+    "C22_lighting_devices": 34.01,
+    "C23_systems_ancillaries": 25.87,
+    "Z_gen_reqs_allowances": 90.09,
+    "TOTAL_building": 539.51
+  },
+  "concrete_rates": {
+    "concrete_per_cy": 227.0,
+    "formwork_per_sf": 25.0,
+    "reinforcing_per_lb": 1.45
+  },
+  "structural_steel_rate_per_lb": 3.4
+}

@@ -1,0 +1,190 @@
+{
+  "source": "PLA actual estimate v2 — full mechanical + electrical breakdown",
+  "total": 40968058.26,
+  "sections": {
+    "general": {
+      "total": 4915000,
+      "lines": [
+        {"item": "MOBILIZE", "cost": 159000},
+        {"item": "DEMOBILIZE", "cost": 24000},
+        {"item": "SITE SUPERVISOR", "cost": 572000},
+        {"item": "PROJ COORDINATOR", "cost": 220000},
+        {"item": "INSURANCE, BONDING AND BUILDERS RISK", "cost": 520000},
+        {"item": "GENERAL REQUIREMENTS", "cost": 2970000},
+        {"item": "TESTING AND INSPECTION - ALLOWANCE", "cost": 100000},
+        {"item": "AUDIO VISUAL SYSTEM - ALLOWANCE", "cost": 20000},
+        {"item": "HYDRO ONE FEES - ALLOWANCE", "cost": 150000},
+        {"item": "INTERIOR SIGNAGE - ALLOWANCE", "cost": 50000},
+        {"item": "ALLOWANCES (ROCK REMOVAL)", "cost": 440000},
+        {"item": "CLOSEOUT MANUALS, TRAINING AND AS-BUILTS", "cost": 50000}
+      ]
+    },
+    "structural": {
+      "total": 3054000,
+      "lines": [
+        {"item": "REBAR", "cost": 415000},
+        {"item": "FOUNDATIONS AND PIERS", "cost": 1255000},
+        {"item": "SLAB ON GRADE + MECH ROOM", "cost": 404000},
+        {"item": "STRUCTURAL STEEL AND ROOF DECK", "cost": 980000}
+      ]
+    },
+    "envelope": {
+      "total": 7247000,
+      "lines": [
+        {"item": "EXT. WALLS AND TRUSS - SITE COORD, ENGINEERING AND SHOP DRAWINGS", "cost": 840000},
+        {"item": "EXT. WALLS AND TRUSS - FABRICATION AND MATERIAL FOR BLOCK A", "cost": 520000},
+        {"item": "EXT. WALLS AND TRUSS - FABRICATION AND MATERIAL FOR BLOCK B", "cost": 520000},
+        {"item": "EXT. WALLS AND TRUSS - FABRICATION AND MATERIAL FOR BLOCK C", "cost": 498000},
+        {"item": "EXT. WALLS AND TRUSS - ONSITE INSTALLATION FOR BLOCK A", "cost": 276000},
+        {"item": "EXT. WALLS AND TRUSS - ONSITE INSTALLATION FOR BLOCK B", "cost": 276000},
+        {"item": "EXT. WALLS AND TRUSS - ONSITE INSTALLATION FOR BLOCK C", "cost": 258000},
+        {"item": "BATT INSULATION", "cost": 155000},
+        {"item": "EXTERIOR DENSGLASS W1 + W2", "cost": 489000},
+        {"item": "SPRAYFOAM", "cost": 159000},
+        {"item": "SHINGLES AND UNDERLAY", "cost": 535000},
+        {"item": "EXTERIOR CLADDING, SOFFIT AND FASCIA", "cost": 1134000},
+        {"item": "ARCH SCREW ON BRICK", "cost": 179000},
+        {"item": "FIRESTOPPING AND SMOKESEALS", "cost": 135000}
+      ]
+    },
+    "openings": {
+      "total": 2116000,
+      "lines": [
+        {"item": "HM DOORS, FRAMES AND HARDWARE SUPPLY", "cost": 745000},
+        {"item": "HM DOORS, FRAMES AND HARDWARE INSTALL", "cost": 325000},
+        {"item": "AUTOMATIC OPERATORS AND KITS", "cost": 89000},
+        {"item": "ALUMINUM ENTRANCES, WINDOWS AND GLAZING", "cost": 957000}
+      ]
+    },
+    "finishes": {
+      "total": 4602158.26,
+      "lines": [
+        {"item": "INTERIOR PARTITION ASSEMBLY", "cost": 1700158.26},
+        {"item": "CEILINGS", "cost": 855000},
+        {"item": "FLOORING", "cost": 810000},
+        {"item": "PAINTING", "cost": 285000},
+        {"item": "HYGENIC WALL COVERINGS", "cost": 352000},
+        {"item": "WALLRAIL AND DOOR PROTECTION", "cost": 315000},
+        {"item": "MILLWORK", "cost": 485000}
+      ]
+    },
+    "specialties_equipment": {
+      "total": 2352500,
+      "lines": [
+        {"item": "TOILET, BATH AND LAUNDRY ACCESSORIES", "cost": 320000},
+        {"item": "KITCHEN EQUIPMENT", "cost": 1050000},
+        {"item": "PATIENT LIFTS", "cost": 480000},
+        {"item": "WINDOW COVERINGS", "cost": 120000},
+        {"item": "SPRINKLERS", "cost": 382500}
+      ]
+    },
+    "civil": {
+      "total": 3990400,
+      "lines": [
+        {"item": "BUILDING - CLEARING AND GRUBBING", "cost": 113000},
+        {"item": "BUILDING - EXCAVATION", "cost": 75000},
+        {"item": "BUILDING - GRANULAR A", "cost": 79080},
+        {"item": "BUILDING - GRANULAR B", "cost": 425000},
+        {"item": "PARKING & ROAD - CLEARING AND GRUBBING", "cost": 125000},
+        {"item": "PARKING & ROAD - EXCAVATION AND GRADING", "cost": 431000},
+        {"item": "PARKING & ROAD - FILLING AND GRADING", "cost": 261000},
+        {"item": "PARKING & ROAD - RELOCATE MATERIAL TO STOCKPILE", "cost": 125000},
+        {"item": "PARKING & ROAD - GRANULAR A", "cost": 66500},
+        {"item": "PARKING & ROAD - GRANULAR B", "cost": 145000},
+        {"item": "PARKING & ROAD - BARRIER CURBS", "cost": 67500},
+        {"item": "PARKING & ROAD - CONCRETE SIDEWALK", "cost": 180000},
+        {"item": "PARKING & ROAD - WALKWAY CONSTRUCTION", "cost": 66000},
+        {"item": "PARKING & ROAD - CONCRETE SLAB", "cost": 78000},
+        {"item": "PARKING & ROAD - TACTILE WARNING STRIPS", "cost": 5000},
+        {"item": "ASPHALT - BASE HL8", "cost": 204000},
+        {"item": "ASPHALT - HOTMIX HL3 40MM", "cost": 185000},
+        {"item": "ASPHALT - HOTMIX HL3 50MM", "cost": 70000},
+        {"item": "ASPHALT - TACK COAT", "cost": 18000},
+        {"item": "ASPHALT - GRINDING JOINT", "cost": 1000},
+        {"item": "SWM - DITCHING", "cost": 90000},
+        {"item": "SWM - CONSTRUCTION OF SWM POND", "cost": 70000},
+        {"item": "SWM - SUBDRAIN 150MM GRASSY SWALE", "cost": 40000},
+        {"item": "SWM - CULVERT 450MM", "cost": 60000},
+        {"item": "SWM - STORM SEWER 450MM", "cost": 8000},
+        {"item": "SWM - STORM SEWER 600MM", "cost": 71000},
+        {"item": "SWM - CONC HEADWALL 450MM", "cost": 22000},
+        {"item": "SWM - PRECAST MH 1200MM", "cost": 23000},
+        {"item": "SWM - RIP RAP", "cost": 80000},
+        {"item": "SWM - SILT FENCE HEAVY DUTY", "cost": 85000},
+        {"item": "ELECTRICAL EXCAVATION - TRANSFORMER VAULT", "cost": 19000},
+        {"item": "ELECTRICAL EXCAVATION - TRENCH/BACKFILL HYDRO", "cost": 32000},
+        {"item": "ELECTRICAL EXCAVATION - TRENCH/BACKFILL LIGHTING", "cost": 32000},
+        {"item": "LANDSCAPE - TOPSEED AND SOIL", "cost": 42560},
+        {"item": "LANDSCAPE - TOPSEED AND SOD", "cost": 53760},
+        {"item": "LANDSCAPE - PLANT NEW SHRUBS AND SEEDS", "cost": 62000},
+        {"item": "LANDSCAPE - CHAIN LINK FENCE, GATE AND GARBAGE ENCLOSURE", "cost": 40000}
+      ]
+    },
+    "mechanical": {
+      "total": 7069000,
+      "lines": [
+        {"item": "MOBILIZE", "cost": 41250},
+        {"item": "BG PLUMBING LABOUR", "cost": 180000},
+        {"item": "BG PLUMBING MATERIALS", "cost": 104634},
+        {"item": "AG PLUMBING LABOUR", "cost": 100000},
+        {"item": "AG PLUMBING MATERIAL", "cost": 111500},
+        {"item": "DOMESTIC WATER LABOUR", "cost": 353141},
+        {"item": "DOMESTIC WATER MATERIALS", "cost": 164700},
+        {"item": "HYDRONIC HEATING LABOUR", "cost": 365000},
+        {"item": "HYDRONIC HEATING MATERIAL", "cost": 224000},
+        {"item": "PROPANE GAS LABOUR", "cost": 12000},
+        {"item": "PROPANE GAS MATERIAL", "cost": 35625},
+        {"item": "PLUMBING FIXTURE/EQUIPMENT LABOUR", "cost": 70000},
+        {"item": "PLUMBING FIXTURE/EQUIPMENT MATERIAL", "cost": 250000},
+        {"item": "HEATING AND COOLING LABOUR", "cost": 56000},
+        {"item": "HEATING AND COOLING MATERIAL", "cost": 695000},
+        {"item": "HVAC LABOUR", "cost": 900000},
+        {"item": "HVAC MATERIALS", "cost": 300000},
+        {"item": "HVAC EQUIPMENT", "cost": 1210000},
+        {"item": "CONTROLS LABOUR", "cost": 474650},
+        {"item": "CONTROLS MATERIAL", "cost": 46000},
+        {"item": "CONTROLS EQUIPMENT", "cost": 282750},
+        {"item": "START-UP AND COMMISSIONING", "cost": 206000},
+        {"item": "PIPE INSULATION LABOUR", "cost": 193674},
+        {"item": "PIPE INSULATION MATERIALS", "cost": 124170},
+        {"item": "DUCT INSULATION LABOUR", "cost": 151618},
+        {"item": "DUCT INSULATION MATERIALS", "cost": 50445},
+        {"item": "REFRIGERATION LABOUR", "cost": 6000},
+        {"item": "REFRIGERATION MATERIALS", "cost": 6000},
+        {"item": "TAB - BALANCING", "cost": 44550},
+        {"item": "WATER BALANCING", "cost": 39302},
+        {"item": "START-UP AND COMMISSIONING (2)", "cost": 21616},
+        {"item": "2% OCCUPANCY AND CLOSEOUTS", "cost": 142500},
+        {"item": "1% COMPLETION OF DEFICIENCIES", "cost": 71250},
+        {"item": "DEMOBILIZATION", "cost": 35625}
+      ]
+    },
+    "electrical": {
+      "total": 6775000,
+      "lines": [
+        {"item": "MOBILIZE", "cost": 55000},
+        {"item": "SITE SERVICES", "cost": 398000},
+        {"item": "DISTRIBUTION EQUIPMENT", "cost": 537000},
+        {"item": "LIGHTING EQUIPMENT", "cost": 633454},
+        {"item": "NURSE CALL EQUIPMENT", "cost": 250000},
+        {"item": "GENERATOR EQUIPMENT", "cost": 400000},
+        {"item": "FIRE ALARM EQUIPMENT", "cost": 82266},
+        {"item": "VOICE/DATA EQUIPMENT", "cost": 245000},
+        {"item": "CCTV/PA/INTERCOM EQUIPMENT", "cost": 370000},
+        {"item": "CABLE TRAY", "cost": 45000},
+        {"item": "CONCRETE WORK", "cost": 188000},
+        {"item": "DISTRIBUTION WIRING", "cost": 958000},
+        {"item": "BRANCH WIRING ROUGHIN", "cost": 1349280},
+        {"item": "FIRE ALARM WIRING", "cost": 196000},
+        {"item": "NURSE CALL WIRING", "cost": 174060},
+        {"item": "VOICE/DATA WIRING", "cost": 170250},
+        {"item": "CCTV/PA/INTERCOM WIRING", "cost": 190690},
+        {"item": "BRANCH FINISHING", "cost": 217000},
+        {"item": "LIGHTING FINISHING", "cost": 275500},
+        {"item": "ESA PERMIT", "cost": 5500},
+        {"item": "AV ALLOWANCE", "cost": 20000},
+        {"item": "DEMOBILIZE", "cost": 15000}
+      ]
+    }
+  }
+}
