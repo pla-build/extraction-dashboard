@@ -147,7 +147,8 @@ function App() {
     { id: 'overview', label: 'Executive Summary', icon: FileText },
     { id: 'comparison', label: 'Benchmark Comparison', icon: BarChart3 },
     { id: 'breakdown', label: 'Cost Breakdown', icon: PieChartIcon },
-    { id: 'details', label: 'Line Items', icon: Database },
+    { id: 'qs', label: 'Quantity Survey', icon: Layers },
+    { id: 'details', label: 'By Section', icon: Database },
     { id: 'methodology', label: 'Methodology', icon: Activity },
   ]
 
@@ -229,6 +230,7 @@ function App() {
         {activeTab === 'overview' && <OverviewTab data={data} sectionBarData={sectionBarData} sourcePieData={sourcePieData} confidenceCounts={confidenceCounts} radarData={radarData} />}
         {activeTab === 'comparison' && <ComparisonTab data={data} />}
         {activeTab === 'breakdown' && <BreakdownTab data={data} sourcePieData={sourcePieData} treemapData={treemapData} />}
+        {activeTab === 'qs' && <QSTab data={data} expandedDivisions={expandedSections} toggleDivision={toggleSection} />}
         {activeTab === 'details' && <DetailsTab data={data} expandedSections={expandedSections} toggleSection={toggleSection} />}
         {activeTab === 'methodology' && <MethodologyTab data={data} />}
       </main>
@@ -582,6 +584,180 @@ function BreakdownTab({ data, sourcePieData, treemapData }: {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function QSTab({ data, expandedDivisions, toggleDivision }: {
+  data: ProjectData; expandedDivisions: Set<string>; toggleDivision: (name: string) => void
+}) {
+  // Group lines by CSI division
+  const divisions = Object.entries(data.division_totals)
+    .filter(([, v]) => v > 0)
+    .sort((a, b) => a[0].localeCompare(b[0]))
+
+  const grandTotal = data.summary.total_cost
+
+  return (
+    <div className="space-y-4">
+      {/* Header */}
+      <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
+        <div className="flex items-center justify-between mb-2">
+          <div>
+            <h3 className="text-lg font-bold text-white">Quantity Survey Schedule</h3>
+            <p className="text-sm text-slate-500">{data.project.name} — {data.project.report_number}</p>
+          </div>
+          <div className="text-right">
+            <p className="text-2xl font-bold text-emerald-400">{fmt(grandTotal)}</p>
+            <p className="text-xs text-slate-500">{data.lines.length} line items across {divisions.length} divisions</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Full QS Schedule by Division */}
+      <div className="rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden">
+        {/* Column headers */}
+        <div className="grid grid-cols-12 gap-0 px-4 py-3 bg-slate-800/60 text-xs uppercase tracking-wider text-slate-500 border-b border-slate-700 font-semibold">
+          <div className="col-span-4">Description</div>
+          <div className="col-span-1 text-right">Qty</div>
+          <div className="col-span-1 text-center">Unit</div>
+          <div className="col-span-2 text-right">Unit Rate</div>
+          <div className="col-span-2 text-right">Total</div>
+          <div className="col-span-1 text-center">Source</div>
+          <div className="col-span-1 text-center">Conf.</div>
+        </div>
+
+        {divisions.map(([div, divTotal]) => {
+          const divLines = data.lines
+            .filter(l => l.csi_division === div)
+            .sort((a, b) => b.total_cost - a.total_cost)
+          const isExpanded = expandedDivisions.has(div)
+          const divName = DIVISION_NAMES[div] || `Division ${div}`
+          const divPct = (divTotal / grandTotal * 100)
+          const divPerSf = divTotal / data.project.gross_floor_area_sf
+
+          return (
+            <div key={div}>
+              {/* Division header row */}
+              <button
+                onClick={() => toggleDivision(div)}
+                className="w-full grid grid-cols-12 gap-0 px-4 py-3 hover:bg-slate-800/40 transition-colors border-b border-slate-800/50 items-center"
+              >
+                <div className="col-span-4 flex items-center gap-2">
+                  {isExpanded
+                    ? <ChevronDown size={14} className="text-emerald-400" />
+                    : <ChevronRight size={14} className="text-slate-500" />
+                  }
+                  <span className="font-bold text-white text-sm">Div {div}</span>
+                  <span className="text-slate-400 text-sm">{divName}</span>
+                  <span className="text-xs text-slate-600">({divLines.length})</span>
+                </div>
+                <div className="col-span-1" />
+                <div className="col-span-1" />
+                <div className="col-span-2 text-right text-xs font-mono text-slate-500">
+                  ${divPerSf.toFixed(2)}/SF
+                </div>
+                <div className="col-span-2 text-right font-mono text-sm font-bold text-white">
+                  {fmt(divTotal)}
+                </div>
+                <div className="col-span-1" />
+                <div className="col-span-1 text-center">
+                  <span className="text-xs text-slate-600">{divPct.toFixed(1)}%</span>
+                </div>
+              </button>
+
+              {/* Line items */}
+              {isExpanded && divLines.map((line, i) => {
+                const srcLabel = SOURCE_LABELS[line.source] || line.source
+                const srcColor = SOURCE_COLORS[line.source] || '#64748b'
+                const confColor = CONFIDENCE_COLORS[line.confidence] || '#64748b'
+
+                return (
+                  <div
+                    key={i}
+                    className="grid grid-cols-12 gap-0 px-4 py-2 border-b border-slate-800/30 hover:bg-slate-800/20 transition-colors text-sm items-center"
+                  >
+                    <div className="col-span-4 pl-8 text-slate-400 truncate" title={line.description}>
+                      {line.description}
+                    </div>
+                    <div className="col-span-1 text-right font-mono text-slate-500">
+                      {line.quantity.toLocaleString(undefined, { maximumFractionDigits: 1 })}
+                    </div>
+                    <div className="col-span-1 text-center text-slate-600 text-xs">
+                      {line.unit}
+                    </div>
+                    <div className="col-span-2 text-right font-mono text-slate-500">
+                      ${line.unit_cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                    </div>
+                    <div className="col-span-2 text-right font-mono text-slate-300">
+                      {fmt(line.total_cost)}
+                    </div>
+                    <div className="col-span-1 text-center" title={srcLabel}>
+                      <span className="inline-block px-1.5 py-0.5 rounded text-[10px] font-medium" style={{ backgroundColor: `${srcColor}20`, color: srcColor }}>
+                        {line.source.includes('cost_db') ? 'DB' : line.source.includes('breakout') ? 'SYS' : line.source.includes('parametric') ? 'PAR' : 'LIB'}
+                      </span>
+                    </div>
+                    <div className="col-span-1 text-center">
+                      <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: confColor }} title={line.confidence} />
+                    </div>
+                  </div>
+                )
+              })}
+
+              {/* Division subtotal when expanded */}
+              {isExpanded && (
+                <div className="grid grid-cols-12 gap-0 px-4 py-2 bg-slate-800/30 border-b border-slate-700/50 items-center">
+                  <div className="col-span-4 pl-8 text-xs font-semibold text-slate-500 uppercase">
+                    Subtotal — Division {div}
+                  </div>
+                  <div className="col-span-1" />
+                  <div className="col-span-1" />
+                  <div className="col-span-2" />
+                  <div className="col-span-2 text-right font-mono text-sm font-bold text-emerald-400">
+                    {fmt(divTotal)}
+                  </div>
+                  <div className="col-span-2" />
+                </div>
+              )}
+            </div>
+          )
+        })}
+
+        {/* Grand Total */}
+        <div className="grid grid-cols-12 gap-0 px-4 py-4 bg-emerald-950/30 border-t-2 border-emerald-800/50 items-center">
+          <div className="col-span-4 font-bold text-white text-sm">
+            GRAND TOTAL — {data.project.name}
+          </div>
+          <div className="col-span-1" />
+          <div className="col-span-1" />
+          <div className="col-span-2 text-right font-mono text-sm text-slate-400">
+            ${data.summary.cost_per_sf.toFixed(2)}/SF
+          </div>
+          <div className="col-span-2 text-right font-mono text-lg font-bold text-emerald-400">
+            {fmt(grandTotal)}
+          </div>
+          <div className="col-span-2" />
+        </div>
+      </div>
+
+      {/* Legend */}
+      <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-4">
+        <div className="flex flex-wrap gap-6 text-xs text-slate-500">
+          <div className="flex items-center gap-4">
+            <span className="font-semibold text-slate-400">Source:</span>
+            <span className="inline-flex items-center gap-1"><span className="px-1.5 py-0.5 rounded text-[10px] font-medium" style={{ backgroundColor: '#05966920', color: '#059669' }}>DB</span> Cost Database</span>
+            <span className="inline-flex items-center gap-1"><span className="px-1.5 py-0.5 rounded text-[10px] font-medium" style={{ backgroundColor: '#0891b220', color: '#0891b2' }}>SYS</span> System Breakout</span>
+            <span className="inline-flex items-center gap-1"><span className="px-1.5 py-0.5 rounded text-[10px] font-medium" style={{ backgroundColor: '#94a3b820', color: '#94a3b8' }}>PAR</span> Parametric</span>
+            <span className="inline-flex items-center gap-1"><span className="px-1.5 py-0.5 rounded text-[10px] font-medium" style={{ backgroundColor: '#ca8a0420', color: '#ca8a04' }}>LIB</span> Rate Library</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="font-semibold text-slate-400">Confidence:</span>
+            <span className="inline-flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-500" /> High</span>
+            <span className="inline-flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-500" /> Medium</span>
+            <span className="inline-flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-red-500" /> Low</span>
           </div>
         </div>
       </div>

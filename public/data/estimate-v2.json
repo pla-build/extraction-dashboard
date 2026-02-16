@@ -2490,10 +2490,10 @@
   ],
   "benchmarks": {
     "hanscomb": {
-      "total": 27903000,
-      "sf": 51726,
+      "total": 38844720,
+      "sf": 72000,
       "cost_per_sf": 539.51,
-      "note": "Hanscomb Class A \u2014 64-bed version"
+      "note": "Hanscomb Class A \u2014 scaled to 96-bed/72,000 SF scope"
     },
     "pla": {
       "total": 40968058,
