@@ -16,6 +16,7 @@ interface ProjectData {
     construction_type: string; stories: number; gross_floor_area_sf: number;
     units: number; unit_type: string; report_date: string; report_number: string;
     prepared_by: string; class: string; confidence_range: string;
+    area_source?: string; mezzanine?: boolean; level_1_sf?: number; mezzanine_sf?: number;
   };
   summary: {
     total_cost: number; cost_per_sf: number; cost_per_unit: number;
@@ -310,11 +311,12 @@ function OverviewTab({ data, sectionBarData, sourcePieData, confidenceCounts, ra
               ['Building Type', data.project.building_type],
               ['Construction Type', data.project.construction_type],
               ['Gross Floor Area', `${data.project.gross_floor_area_sf.toLocaleString()} SF`],
-              ['Stories', `${data.project.stories}`],
+              ['Stories', data.project.stories === 1 ? `${data.project.stories} + Mezzanine` : `${data.project.stories}`],
               ['Units', `${data.project.units} ${data.project.unit_type}`],
               ['Location', data.project.location],
               ['Estimate Class', data.project.class],
               ['Accuracy Range', data.project.confidence_range],
+              ...(data.project.area_source ? [['Area Source', data.project.area_source]] : []),
             ].map(([label, value]) => (
               <div key={label}>
                 <span className="text-slate-600">{label}: </span>

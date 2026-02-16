@@ -5,25 +5,29 @@
     "location": "Gore Bay, Ontario",
     "building_type": "Long-Term Care Facility",
     "construction_type": "Type IIA \u2014 Non-Combustible",
-    "stories": 3,
-    "gross_floor_area_sf": 51350,
+    "stories": 1,
+    "mezzanine": true,
+    "gross_floor_area_sf": 51890,
+    "level_1_sf": 48039,
+    "mezzanine_sf": 3851,
     "units": 64,
     "unit_type": "Beds",
     "report_date": "2026-02-17",
     "report_number": "BC-EST-2026-001",
     "prepared_by": "BuildCode Extruction Engine v2.0",
     "class": "Class C \u2014 Schematic Design",
-    "confidence_range": "\u00b115%"
+    "confidence_range": "\u00b115%",
+    "area_source": "Extracted from A1.01 Gross Building Area Schedule \u2014 48,039 SF Level 1 + 3,851 SF Mezzanine = 51,890 SF"
   },
   "summary": {
-    "total_cost": 28547432.52,
-    "cost_per_sf": 555.9383158714703,
-    "cost_per_unit": 446053.633125,
+    "total_cost": 28810919.63,
+    "cost_per_sf": 555.2306731547504,
+    "cost_per_unit": 450170.61921875,
     "line_count": 212,
     "pricing_method": {
-      "cost_db_pct": 28.8,
-      "rate_library_fallback_pct": 29.1,
-      "parametric_gap_fill_pct": 42.0,
+      "cost_db_pct": 28.7,
+      "rate_library_fallback_pct": 29.2,
+      "parametric_gap_fill_pct": 42.1,
       "db_matches": 122,
       "db_misses": 4,
       "match_rate": 96.8
@@ -36,8 +40,8 @@
         "01"
       ],
       "pla": 4915000,
-      "engine": 3322345.0,
-      "pct": 67.6
+      "engine": 3357283.0,
+      "pct": 68.3
     },
     {
       "name": "Structural",
@@ -46,8 +50,8 @@
         "05"
       ],
       "pla": 3054000,
-      "engine": 2270165.68,
-      "pct": 74.3
+      "engine": 2294050.57,
+      "pct": 75.1
     },
     {
       "name": "Building Envelope",
@@ -57,8 +61,8 @@
         "07"
       ],
       "pla": 7247000,
-      "engine": 4485698.07,
-      "pct": 61.9
+      "engine": 4532869.9399999995,
+      "pct": 62.5
     },
     {
       "name": "Openings",
@@ -66,8 +70,8 @@
         "08"
       ],
       "pla": 2116000,
-      "engine": 1617392.44,
-      "pct": 76.4
+      "engine": 1634510.54,
+      "pct": 77.2
     },
     {
       "name": "Interior Finishes",
@@ -77,8 +81,8 @@
         "12"
       ],
       "pla": 4602158,
-      "engine": 2695886.28,
-      "pct": 58.6
+      "engine": 2723873.13,
+      "pct": 59.2
     },
     {
       "name": "Specialties & Equipment",
@@ -87,8 +91,8 @@
         "14"
       ],
       "pla": 2352500,
-      "engine": 1806341.48,
-      "pct": 76.8
+      "engine": 1825388.28,
+      "pct": 77.6
     },
     {
       "name": "Site & Civil",
@@ -99,8 +103,8 @@
         "33"
       ],
       "pla": 3990400,
-      "engine": 2937914.42,
-      "pct": 73.6
+      "engine": 2969278.13,
+      "pct": 74.4
     },
     {
       "name": "Mechanical",
@@ -111,8 +115,8 @@
         "25"
       ],
       "pla": 7069000,
-      "engine": 5602116.91,
-      "pct": 79.2
+      "engine": 5649486.08,
+      "pct": 79.9
     },
     {
       "name": "Electrical",
@@ -122,35 +126,35 @@
         "28"
       ],
       "pla": 6775000,
-      "engine": 3798704.7399999998,
-      "pct": 56.1
+      "engine": 3813312.46,
+      "pct": 56.3
     }
   ],
   "division_totals": {
     "": 10867.5,
-    "01": 3322345.0,
-    "02": 134302.5,
-    "03": 1247127.75,
-    "04": 1078391.08,
-    "05": 1023037.93,
-    "06": 603383.04,
-    "07": 2803923.95,
-    "08": 1617392.44,
-    "09": 2156571.63,
-    "10": 323536.41,
-    "11": 1509783.6,
-    "12": 215778.24,
-    "14": 296557.88,
-    "21": 417852.28,
-    "22": 1682677.28,
-    "23": 2965493.35,
-    "25": 536094.0,
-    "26": 2858301.3,
-    "27": 542081.21,
-    "28": 398322.23,
-    "31": 970535.54,
-    "32": 1186066.9,
-    "33": 647009.48
+    "01": 3357283.0,
+    "02": 136182.2,
+    "03": 1260342.67,
+    "04": 1089731.51,
+    "05": 1033707.9,
+    "06": 609728.26,
+    "07": 2833410.17,
+    "08": 1634510.54,
+    "09": 2179250.28,
+    "10": 326792.61,
+    "11": 1525530.5,
+    "12": 217830.24,
+    "14": 299857.78,
+    "21": 422209.4,
+    "22": 1688745.41,
+    "23": 2996799.67,
+    "25": 541731.6,
+    "26": 2865991.98,
+    "27": 546444.05,
+    "28": 400876.43,
+    "31": 980741.76,
+    "32": 1198539.65,
+    "33": 653814.52
   },
   "lines": [
     {
@@ -185,70 +189,70 @@
     },
     {
       "description": "General contractor overhead and profit",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 25.2,
-      "total_cost": 1294020.0,
+      "total_cost": 1307628.0,
       "csi_division": "01",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Project supervision and management, 18 months",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 18.9,
-      "total_cost": 970515.0,
+      "total_cost": 980721.0,
       "csi_division": "01",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Temporary facilities \u2014 trailers, power, water, fencing, hoarding",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 8.4,
-      "total_cost": 431340.0,
+      "total_cost": 435876.0,
       "csi_division": "01",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Performance and payment bonds, $25M+ project",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 6.3,
-      "total_cost": 323505.0,
+      "total_cost": 326907.0,
       "csi_division": "01",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Builder's risk insurance and liability",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 4.2,
-      "total_cost": 215670.0,
+      "total_cost": 217938.0,
       "csi_division": "01",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Site cleanup, waste disposal, dumpsters",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 1.7,
-      "total_cost": 87295.0,
+      "total_cost": 88213.0,
       "csi_division": "01",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Existing Conditions \u2014 parametric gap-fill (rsmeans)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
-      "unit_cost": 2.52,
-      "total_cost": 129402.0,
+      "unit_cost": 2.53,
+      "total_cost": 131281.7,
       "csi_division": "02",
       "source": "parametric_gap_fill",
       "confidence": "low"
@@ -279,250 +283,250 @@
     },
     {
       "description": "Concrete elevated slabs, 6 inch, 4000 psi on metal deck",
-      "quantity": 1694.6,
+      "quantity": 1712.4,
       "unit": "C.Y.",
       "unit_cost": 267.75,
-      "total_cost": 453729.15,
+      "total_cost": 458495.1,
       "csi_division": "03",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Formwork, plywood, walls and columns, 4 use",
-      "quantity": 15405.0,
+      "quantity": 15567.0,
       "unit": "SFCA",
       "unit_cost": 14.15,
-      "total_cost": 217980.75,
+      "total_cost": 220273.05,
       "csi_division": "03",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Concrete foundations, strip and pad footings, 3000 psi",
-      "quantity": 770.2,
+      "quantity": 778.4,
       "unit": "C.Y.",
       "unit_cost": 257.25,
-      "total_cost": 198133.95,
+      "total_cost": 200243.4,
       "csi_division": "03",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Concrete slab on grade, 4 inch, 3500 psi, w/ w.w.f.",
-      "quantity": 616.2,
+      "quantity": 622.7,
       "unit": "C.Y.",
       "unit_cost": 262.5,
-      "total_cost": 161752.5,
+      "total_cost": 163458.75,
       "csi_division": "03",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Concrete columns and shear walls, formed and placed",
-      "quantity": 410.8,
+      "quantity": 415.1,
       "unit": "C.Y.",
       "unit_cost": 294.0,
-      "total_cost": 120775.2,
+      "total_cost": 122039.4,
       "csi_division": "03",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Reinforcing steel, A615 grade 60, detailed and placed",
-      "quantity": 61.6,
+      "quantity": 62.3,
       "unit": "Ton",
       "unit_cost": 1538.25,
-      "total_cost": 94756.2,
+      "total_cost": 95832.97,
       "csi_division": "03",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Masonry \u2014 parametric gap-fill (pla_calibrated)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 14.15,
-      "total_cost": 726602.5,
+      "total_cost": 734243.5,
       "csi_division": "04",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Brick veneer cladding, standard modular, with ties and mortar",
-      "quantity": 11297.0,
+      "quantity": 11415.8,
       "unit": "S.F.",
       "unit_cost": 19.54,
-      "total_cost": 220743.38,
+      "total_cost": 223064.73,
       "csi_division": "04",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "CMU backup wall, 8 inch, reinforced, grouted",
-      "quantity": 11297.0,
+      "quantity": 11415.8,
       "unit": "S.F.",
       "unit_cost": 11.6,
-      "total_cost": 131045.2,
+      "total_cost": 132423.28,
       "csi_division": "04",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Structural steel, beams and girders, nursing home",
-      "quantity": 154.1,
+      "quantity": 155.7,
       "unit": "Ton",
       "unit_cost": 4305.15,
-      "total_cost": 663423.61,
+      "total_cost": 670311.85,
       "csi_division": "05",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Miscellaneous metals \u2014 stairs, railings, lintels, embeds",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 3.68,
-      "total_cost": 188968.0,
+      "total_cost": 190955.2,
       "csi_division": "05",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Metal deck, composite, 2\" deep, 20 ga galvanized",
-      "quantity": 34404.5,
+      "quantity": 34766.3,
       "unit": "S.F.",
       "unit_cost": 4.96,
-      "total_cost": 170646.32,
+      "total_cost": 172440.85,
       "csi_division": "05",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Millwork, cabinetry, countertops, nurse stations",
-      "quantity": 1540.5,
+      "quantity": 1556.7,
       "unit": "L.F.",
       "unit_cost": 367.5,
-      "total_cost": 566133.75,
+      "total_cost": 572087.25,
       "csi_division": "06",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Exterior sheathing, DensGlass or similar, 5/8\"",
-      "quantity": 15918.5,
+      "quantity": 16085.9,
       "unit": "S.F.",
       "unit_cost": 2.34,
-      "total_cost": 37249.29,
+      "total_cost": 37641.01,
       "csi_division": "06",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Thermal & Moisture Protection \u2014 parametric gap-fill (pla_calibrated)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 41.67,
-      "total_cost": 2139754.5,
+      "total_cost": 2162256.3,
       "csi_division": "07",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Metal wall panels, insulated, prefinished steel",
-      "quantity": 3081.0,
+      "quantity": 3113.4,
       "unit": "S.F.",
       "unit_cost": 44.1,
-      "total_cost": 135872.1,
+      "total_cost": 137300.94,
       "csi_division": "07",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Roof insulation, polyisocyanurate, 4 inch, R-24",
-      "quantity": 16945.5,
+      "quantity": 17123.7,
       "unit": "S.F.",
       "unit_cost": 5.97,
-      "total_cost": 101164.63,
+      "total_cost": 102228.49,
       "csi_division": "07",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Flashing, galvanized steel, counter and through-wall",
-      "quantity": 4108.0,
+      "quantity": 4151.2,
       "unit": "L.F.",
       "unit_cost": 22.79,
-      "total_cost": 93621.32,
+      "total_cost": 94605.85,
       "csi_division": "07",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Roofing, 2-ply modified bitumen, fully adhered",
-      "quantity": 16945.5,
+      "quantity": 17123.7,
       "unit": "S.F.",
       "unit_cost": 5.3,
-      "total_cost": 89811.15,
+      "total_cost": 90755.61,
       "csi_division": "07",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Air barrier and vapour retarder, self-adhered membrane",
-      "quantity": 20540.0,
+      "quantity": 20756.0,
       "unit": "S.F.",
       "unit_cost": 2.47,
-      "total_cost": 50733.8,
+      "total_cost": 51267.32,
       "csi_division": "07",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Soffit and fascia, prefinished aluminum",
-      "quantity": 2567.5,
+      "quantity": 2594.5,
       "unit": "S.F.",
       "unit_cost": 18.9,
-      "total_cost": 48525.75,
+      "total_cost": 49036.05,
       "csi_division": "07",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Wall insulation, fiberglass batt, 6 inch, R-20",
-      "quantity": 20540.0,
+      "quantity": 20756.0,
       "unit": "S.F.",
       "unit_cost": 2.28,
-      "total_cost": 46831.2,
+      "total_cost": 47323.68,
       "csi_division": "07",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Waterproofing, below grade, membrane applied",
-      "quantity": 5135.0,
+      "quantity": 5189.0,
       "unit": "S.F.",
       "unit_cost": 8.4,
-      "total_cost": 43134.0,
+      "total_cost": 43587.6,
       "csi_division": "07",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "EIFS exterior finish system, complete",
-      "quantity": 1540.5,
+      "quantity": 1556.7,
       "unit": "S.F.",
       "unit_cost": 21.36,
-      "total_cost": 32905.08,
+      "total_cost": 33251.11,
       "csi_division": "07",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Caulking and sealants, exterior joints",
-      "quantity": 2567.5,
+      "quantity": 2594.5,
       "unit": "L.F.",
       "unit_cost": 8.4,
-      "total_cost": 21567.0,
+      "total_cost": 21793.8,
       "csi_division": "07",
       "source": "system_breakout_fallback",
       "confidence": "medium"
@@ -541,10 +545,10 @@
     },
     {
       "description": "Openings \u2014 parametric gap-fill (hanscomb)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
-      "unit_cost": 21.13,
-      "total_cost": 1085025.5,
+      "unit_cost": 21.24,
+      "total_cost": 1102143.6,
       "csi_division": "08",
       "source": "parametric_gap_fill",
       "confidence": "low"
@@ -635,70 +639,70 @@
     },
     {
       "description": "Finishes \u2014 parametric gap-fill (pla_calibrated)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 21.75,
-      "total_cost": 1116862.5,
+      "total_cost": 1128607.5,
       "csi_division": "09",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Interior partitions, GWB on steel studs, taped and finished",
-      "quantity": 41080.0,
+      "quantity": 41512.0,
       "unit": "S.F.",
       "unit_cost": 11.03,
-      "total_cost": 453112.4,
+      "total_cost": 457877.36,
       "csi_division": "09",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Painting, walls and ceilings, latex, 2 coats + primer",
-      "quantity": 128375.0,
+      "quantity": 129725.0,
       "unit": "S.F.",
       "unit_cost": 1.67,
-      "total_cost": 214386.25,
+      "total_cost": 216640.75,
       "csi_division": "09",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Acoustic ceiling tiles, 2x4, tegular, suspended grid",
-      "quantity": 30810.0,
+      "quantity": 31134.0,
       "unit": "S.F.",
       "unit_cost": 6.95,
-      "total_cost": 214129.5,
+      "total_cost": 216381.3,
       "csi_division": "09",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Resilient flooring, sheet vinyl, commercial grade",
-      "quantity": 35945.0,
+      "quantity": 36323.0,
       "unit": "S.F.",
       "unit_cost": 3.08,
-      "total_cost": 110710.6,
+      "total_cost": 111874.84,
       "csi_division": "09",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Ceramic tile, floors and walls, thin-set, institutional",
-      "quantity": 7702.5,
+      "quantity": 7783.5,
       "unit": "S.F.",
       "unit_cost": 6.15,
-      "total_cost": 47370.38,
+      "total_cost": 47868.53,
       "csi_division": "09",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Specialties \u2014 parametric gap-fill (rsmeans)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 6.03,
-      "total_cost": 309640.5,
+      "total_cost": 312896.7,
       "csi_division": "10",
       "source": "parametric_gap_fill",
       "confidence": "low"
@@ -727,10 +731,10 @@
     },
     {
       "description": "Equipment \u2014 parametric gap-fill (hanscomb)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
-      "unit_cost": 28.2,
-      "total_cost": 1448070.0,
+      "unit_cost": 28.21,
+      "total_cost": 1463816.9,
       "csi_division": "11",
       "source": "parametric_gap_fill",
       "confidence": "low"
@@ -977,10 +981,10 @@
     },
     {
       "description": "Furnishings \u2014 parametric gap-fill (rsmeans)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 3.8,
-      "total_cost": 195130.0,
+      "total_cost": 197182.0,
       "csi_division": "12",
       "source": "parametric_gap_fill",
       "confidence": "low"
@@ -1011,10 +1015,10 @@
     },
     {
       "description": "Conveying \u2014 parametric gap-fill (rsmeans)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
-      "unit_cost": 5.15,
-      "total_cost": 264452.5,
+      "unit_cost": 5.16,
+      "total_cost": 267752.4,
       "csi_division": "14",
       "source": "parametric_gap_fill",
       "confidence": "low"
@@ -1033,30 +1037,30 @@
     },
     {
       "description": "Fire Suppression \u2014 parametric gap-fill (hanscomb)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 3.62,
-      "total_cost": 185887.0,
+      "total_cost": 187841.8,
       "csi_division": "21",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Sprinkler piping, steel, 1\" to 4\", with hangers",
-      "quantity": 7702.5,
+      "quantity": 7783.5,
       "unit": "L.F.",
       "unit_cost": 23.1,
-      "total_cost": 177927.75,
+      "total_cost": 179798.85,
       "csi_division": "21",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Sprinkler heads, pendant, quick response, standard coverage",
-      "quantity": 395.0,
+      "quantity": 399.2,
       "unit": "Ea.",
       "unit_cost": 126.48,
-      "total_cost": 49959.6,
+      "total_cost": 50490.82,
       "csi_division": "21",
       "source": "system_breakout_db",
       "confidence": "high"
@@ -1121,40 +1125,40 @@
     },
     {
       "description": "Medical gas system \u2014 O2, vacuum, medical air",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 4.2,
-      "total_cost": 215670.0,
+      "total_cost": 217938.0,
       "csi_division": "22",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Domestic water piping, copper type L, insulated",
-      "quantity": 4108.0,
+      "quantity": 4151.2,
       "unit": "L.F.",
       "unit_cost": 36.75,
-      "total_cost": 150969.0,
+      "total_cost": 152556.6,
       "csi_division": "22",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Plumbing waste and vent piping, cast iron/PVC",
-      "quantity": 5135.0,
+      "quantity": 5189.0,
       "unit": "L.F.",
       "unit_cost": 26.85,
-      "total_cost": 137874.75,
+      "total_cost": 139324.65,
       "csi_division": "22",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Hot water recirculation system piping",
-      "quantity": 2054.0,
+      "quantity": 2075.6,
       "unit": "L.F.",
       "unit_cost": 31.5,
-      "total_cost": 64701.0,
+      "total_cost": 65381.4,
       "csi_division": "22",
       "source": "system_breakout_fallback",
       "confidence": "medium"
@@ -1255,10 +1259,10 @@
     },
     {
       "description": "Roof drains and overflow drains",
-      "quantity": 17.1,
+      "quantity": 17.3,
       "unit": "Ea.",
       "unit_cost": 411.18,
-      "total_cost": 7031.18,
+      "total_cost": 7113.41,
       "csi_division": "22",
       "source": "system_breakout_db",
       "confidence": "high"
@@ -1361,60 +1365,60 @@
     },
     {
       "description": "HVAC \u2014 parametric gap-fill (pla_calibrated)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
-      "unit_cost": 31.0,
-      "total_cost": 1591850.0,
+      "unit_cost": 31.1,
+      "total_cost": 1613779.0,
       "csi_division": "23",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Hydronic heating piping, copper, insulated, various sizes",
-      "quantity": 6162.0,
+      "quantity": 6226.8,
       "unit": "L.F.",
       "unit_cost": 65.1,
-      "total_cost": 401146.2,
+      "total_cost": 405364.68,
       "csi_division": "23",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "VAV terminal units with reheat coils and tubing",
-      "quantity": 85.6,
+      "quantity": 86.5,
       "unit": "Ea.",
       "unit_cost": 1890.0,
-      "total_cost": 161784.0,
+      "total_cost": 163485.0,
       "csi_division": "23",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Testing, adjusting, and balancing (TAB)",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 2.1,
-      "total_cost": 107835.0,
+      "total_cost": 108969.0,
       "csi_division": "23",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Glycol system piping, steel, insulated",
-      "quantity": 2054.0,
+      "quantity": 2075.6,
       "unit": "L.F.",
       "unit_cost": 50.4,
-      "total_cost": 103521.6,
+      "total_cost": 104610.24,
       "csi_division": "23",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Exhaust ductwork, galvanized steel",
-      "quantity": 3081.0,
+      "quantity": 3113.4,
       "unit": "L.F.",
       "unit_cost": 22.79,
-      "total_cost": 70215.99,
+      "total_cost": 70954.39,
       "csi_division": "23",
       "source": "system_breakout_db",
       "confidence": "high"
@@ -1433,10 +1437,10 @@
     },
     {
       "description": "Duct insulation, fiberglass blanket wrap, 1.5 inch",
-      "quantity": 12837.5,
+      "quantity": 12972.5,
       "unit": "S.F.",
       "unit_cost": 3.68,
-      "total_cost": 47242.0,
+      "total_cost": 47738.8,
       "csi_division": "23",
       "source": "system_breakout_fallback",
       "confidence": "medium"
@@ -1899,10 +1903,10 @@
     },
     {
       "description": "Integrated Automation \u2014 parametric gap-fill (hanscomb)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 10.44,
-      "total_cost": 536094.0,
+      "total_cost": 541731.6,
       "csi_division": "25",
       "source": "parametric_gap_fill",
       "confidence": "low"
@@ -1933,10 +1937,10 @@
     },
     {
       "description": "Electrical distribution, switchgear and bus duct",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 5.25,
-      "total_cost": 269587.5,
+      "total_cost": 272422.5,
       "csi_division": "26",
       "source": "system_breakout_fallback",
       "confidence": "medium"
@@ -1955,30 +1959,30 @@
     },
     {
       "description": "Lighting controls, occupancy sensors, dimming",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 2.62,
-      "total_cost": 134537.0,
+      "total_cost": 135951.8,
       "csi_division": "26",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Electrical feeders, 500 MCM in 3\" conduit",
-      "quantity": 1027.0,
+      "quantity": 1037.8,
       "unit": "L.F.",
       "unit_cost": 130.28,
-      "total_cost": 133797.56,
+      "total_cost": 135204.58,
       "csi_division": "26",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Branch circuit wiring, 12 AWG THHN in 3/4\" EMT",
-      "quantity": 6162.0,
+      "quantity": 6226.8,
       "unit": "L.F.",
       "unit_cost": 18.22,
-      "total_cost": 112271.64,
+      "total_cost": 113452.3,
       "csi_division": "26",
       "source": "system_breakout_db",
       "confidence": "high"
@@ -1995,10 +1999,10 @@
     },
     {
       "description": "Grounding system, ground rods, conductors",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 1.58,
-      "total_cost": 81133.0,
+      "total_cost": 81986.2,
       "csi_division": "26",
       "source": "system_breakout_fallback",
       "confidence": "medium"
@@ -2245,10 +2249,10 @@
     },
     {
       "description": "Structured cabling, Cat6A, horizontal runs",
-      "quantity": 1711.7,
+      "quantity": 1729.7,
       "unit": "Ea.",
       "unit_cost": 242.38,
-      "total_cost": 414881.85,
+      "total_cost": 419244.69,
       "csi_division": "27",
       "source": "system_breakout_db",
       "confidence": "high"
@@ -2323,10 +2327,10 @@
     },
     {
       "description": "Fire alarm system, addressable, panels and devices",
-      "quantity": 51350.0,
+      "quantity": 51890.0,
       "unit": "S.F.",
       "unit_cost": 4.73,
-      "total_cost": 242885.5,
+      "total_cost": 245439.7,
       "csi_division": "28",
       "source": "system_breakout_fallback",
       "confidence": "medium"
@@ -2379,140 +2383,140 @@
     },
     {
       "description": "Earthwork \u2014 parametric gap-fill (pla_calibrated)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 14.94,
-      "total_cost": 767169.0,
+      "total_cost": 775236.6,
       "csi_division": "31",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Site grading, fine grading, topsoil placement",
-      "quantity": 25675.0,
+      "quantity": 25945.0,
       "unit": "S.F.",
       "unit_cost": 2.62,
-      "total_cost": 67268.5,
+      "total_cost": 67975.9,
       "csi_division": "31",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Backfill, compacted, granular, around foundations",
-      "quantity": 2567.5,
+      "quantity": 2594.5,
       "unit": "C.Y.",
       "unit_cost": 22.94,
-      "total_cost": 58898.45,
+      "total_cost": 59517.83,
       "csi_division": "31",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Excavation, bulk, machine, footings and foundations",
-      "quantity": 4108.0,
+      "quantity": 4151.2,
       "unit": "C.Y.",
       "unit_cost": 11.49,
-      "total_cost": 47200.92,
+      "total_cost": 47697.29,
       "csi_division": "31",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Rock removal / blasting allowance (Northern Ontario)",
-      "quantity": 1027.0,
+      "quantity": 1037.8,
       "unit": "C.Y.",
       "unit_cost": 29.21,
-      "total_cost": 29998.67,
+      "total_cost": 30314.14,
       "csi_division": "31",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Exterior Improvements \u2014 parametric gap-fill (pla_calibrated)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 19.98,
-      "total_cost": 1025973.0,
+      "total_cost": 1036762.2,
       "csi_division": "32",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Asphalt paving, parking lot, 3 inch, complete",
-      "quantity": 12837.5,
+      "quantity": 12972.5,
       "unit": "S.F.",
       "unit_cost": 6.77,
-      "total_cost": 86909.88,
+      "total_cost": 87823.82,
       "csi_division": "32",
       "source": "system_breakout_db",
       "confidence": "high"
     },
     {
       "description": "Concrete sidewalks and curbs",
-      "quantity": 4108.0,
+      "quantity": 4151.2,
       "unit": "S.F.",
       "unit_cost": 9.94,
-      "total_cost": 40833.52,
+      "total_cost": 41262.93,
       "csi_division": "32",
       "source": "system_breakout_db",
       "confidence": "medium"
     },
     {
       "description": "Landscaping, seeding, topsoil, trees",
-      "quantity": 7702.5,
+      "quantity": 7783.5,
       "unit": "S.F.",
       "unit_cost": 4.2,
-      "total_cost": 32350.5,
+      "total_cost": 32690.7,
       "csi_division": "32",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Utilities \u2014 parametric gap-fill (pla_calibrated)",
-      "quantity": 51350,
+      "quantity": 51890,
       "unit": "SF",
       "unit_cost": 9.24,
-      "total_cost": 474474.0,
+      "total_cost": 479463.6,
       "csi_division": "33",
       "source": "parametric_gap_fill",
       "confidence": "low"
     },
     {
       "description": "Storm sewer, PVC, 12 inch, complete",
-      "quantity": 1027.0,
+      "quantity": 1037.8,
       "unit": "L.F.",
       "unit_cost": 68.25,
-      "total_cost": 70092.75,
+      "total_cost": 70829.85,
       "csi_division": "33",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Water main, ductile iron, 8 inch, complete",
-      "quantity": 513.5,
+      "quantity": 518.9,
       "unit": "L.F.",
       "unit_cost": 89.25,
-      "total_cost": 45829.88,
+      "total_cost": 46311.82,
       "csi_division": "33",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Sanitary sewer, PVC, 8 inch, complete",
-      "quantity": 770.2,
+      "quantity": 778.4,
       "unit": "L.F.",
       "unit_cost": 57.75,
-      "total_cost": 44479.05,
+      "total_cost": 44952.6,
       "csi_division": "33",
       "source": "system_breakout_fallback",
       "confidence": "medium"
     },
     {
       "description": "Gas service, 2 inch, PE, complete",
-      "quantity": 256.8,
+      "quantity": 259.4,
       "unit": "L.F.",
       "unit_cost": 47.25,
-      "total_cost": 12133.8,
+      "total_cost": 12256.65,
       "csi_division": "33",
       "source": "system_breakout_fallback",
       "confidence": "medium"
@@ -2520,21 +2524,21 @@
   ],
   "benchmarks": {
     "hanscomb": {
-      "total": 27698685,
-      "sf": 51350,
+      "total": 27988914,
+      "sf": 51890,
       "cost_per_sf": 539.24,
-      "note": "Hanscomb Class A \u2014 64-bed, 51,350 SF"
+      "note": "Hanscomb Class A \u2014 scaled to 51,890 SF"
     },
     "pla": {
       "total": 40968058,
-      "sf": 51350,
-      "cost_per_sf": 797.82,
+      "sf": 51890,
+      "cost_per_sf": 789.49,
       "note": "PLA Contractor Estimate \u2014 64-bed"
     },
     "engine": {
-      "total": 28547432.52,
-      "sf": 51350,
-      "cost_per_sf": 555.9383158714703,
+      "total": 28810919.63,
+      "sf": 51890,
+      "cost_per_sf": 555.2306731547504,
       "note": "BuildCode Extruction Engine v2 \u2014 automated"
     }
   }
