@@ -81,7 +81,7 @@ function App() {
   const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set())
 
   useEffect(() => {
-    fetch('/data/estimate-v2.json').then(r => r.json()).then(setData)
+    fetch('/data/estimate-v4.json').then(r => r.json()).then(setData)
   }, [])
 
   if (!data) return (
