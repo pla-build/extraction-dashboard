@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  PieChart, Pie, Cell, Legend, RadarChart, PolarGrid, PolarAngleAxis,
-  PolarRadiusAxis, Radar, Treemap,
+  PieChart, Pie, Cell, Legend, Treemap,
 } from 'recharts'
 import {
   Building2, FileText, DollarSign, Layers, TrendingUp,
   CheckCircle2, AlertTriangle, ChevronDown, ChevronRight,
-  BarChart3, PieChart as PieChartIcon, Activity, Database,
+  PieChart as PieChartIcon, Activity, Database,
 } from 'lucide-react'
 
 interface ProjectData {
@@ -124,13 +123,6 @@ function App() {
     color: SECTION_COLORS[i],
   }))
 
-  // Radar chart data
-  const radarData = data.sections.map(s => ({
-    subject: s.name.split(' ')[0],
-    accuracy: Math.min(s.pct, 130),
-    target: 100,
-  }))
-
   // Treemap data
   const treemapData = data.sections.map((s, i) => ({
     name: s.name,
@@ -146,7 +138,6 @@ function App() {
 
   const tabs = [
     { id: 'overview', label: 'Executive Summary', icon: FileText },
-    { id: 'comparison', label: 'Benchmark Comparison', icon: BarChart3 },
     { id: 'breakdown', label: 'Cost Breakdown', icon: PieChartIcon },
     { id: 'qs', label: 'Quantity Survey', icon: Layers },
     { id: 'details', label: 'By Section', icon: Database },
@@ -228,8 +219,7 @@ function App() {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto px-6 py-8">
-        {activeTab === 'overview' && <OverviewTab data={data} sectionBarData={sectionBarData} sourcePieData={sourcePieData} confidenceCounts={confidenceCounts} radarData={radarData} />}
-        {activeTab === 'comparison' && <ComparisonTab data={data} />}
+        {activeTab === 'overview' && <OverviewTab data={data} sectionBarData={sectionBarData} sourcePieData={sourcePieData} confidenceCounts={confidenceCounts} />}
         {activeTab === 'breakdown' && <BreakdownTab data={data} sourcePieData={sourcePieData} treemapData={treemapData} />}
         {activeTab === 'qs' && <QSTab data={data} expandedDivisions={expandedSections} toggleDivision={toggleSection} />}
         {activeTab === 'details' && <DetailsTab data={data} expandedSections={expandedSections} toggleSection={toggleSection} />}
@@ -286,10 +276,9 @@ function StatCard({ icon: Icon, label, value, sub, accent = 'emerald' }: {
   )
 }
 
-function OverviewTab({ data, sectionBarData, sourcePieData, confidenceCounts, radarData }: {
-  data: ProjectData; sectionBarData: any[]; sourcePieData: any[]; confidenceCounts: Record<string, number>; radarData: any[]
+function OverviewTab({ data, sectionBarData, sourcePieData, confidenceCounts }: {
+  data: ProjectData; sectionBarData: any[]; sourcePieData: any[]; confidenceCounts: Record<string, number>
 }) {
-  const accuracy = (data.summary.total_cost / data.benchmarks.pla.total * 100)
   const totalConfidence = Object.values(confidenceCounts).reduce((a, b) => a + b, 0)
 
   return (
@@ -297,7 +286,7 @@ function OverviewTab({ data, sectionBarData, sourcePieData, confidenceCounts, ra
       {/* KPI Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard icon={DollarSign} label="Total Estimate" value={fmt(data.summary.total_cost)} sub={`${data.summary.cost_per_sf.toFixed(2)}/SF`} accent="emerald" />
-        <StatCard icon={TrendingUp} label="Benchmark Accuracy" value={`${accuracy.toFixed(1)}%`} sub="vs PLA contractor estimate" accent="cyan" />
+        <StatCard icon={TrendingUp} label="Cost Per SF" value={`$${data.summary.cost_per_sf.toFixed(0)}`} sub={`${data.project.gross_floor_area_sf.toLocaleString()} SF`} accent="cyan" />
         <StatCard icon={Layers} label="Line Items" value={`${data.summary.line_count}`} sub={`${data.summary.pricing_method.match_rate}% DB match rate`} accent="amber" />
         <StatCard icon={CheckCircle2} label="DB-Priced" value={`${(100 - data.summary.pricing_method.parametric_gap_fill_pct).toFixed(0)}%`} sub={`${data.summary.pricing_method.parametric_gap_fill_pct}% parametric`} accent="violet" />
       </div>
@@ -350,7 +339,7 @@ function OverviewTab({ data, sectionBarData, sourcePieData, confidenceCounts, ra
 
       {/* Section Summary Chart */}
       <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
-        <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-6">Cost by Section — Engine vs Contractor</h3>
+        <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-6">Cost by Section</h3>
         <ResponsiveContainer width="100%" height={400}>
           <BarChart data={sectionBarData} margin={{ top: 0, right: 0, left: 0, bottom: 60 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
@@ -365,8 +354,7 @@ function OverviewTab({ data, sectionBarData, sourcePieData, confidenceCounts, ra
               }}
             />
             <Legend verticalAlign="top" height={36} />
-            <Bar dataKey="engine" name="BuildCode Engine" fill="#059669" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="pla" name="PLA Contractor" fill="#334155" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="engine" name="BuildCode Estimate" fill="#059669" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
@@ -387,103 +375,25 @@ function OverviewTab({ data, sectionBarData, sourcePieData, confidenceCounts, ra
         </div>
 
         <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
-          <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">Section Accuracy Radar</h3>
-          <ResponsiveContainer width="100%" height={300}>
-            <RadarChart data={radarData} cx="50%" cy="50%" outerRadius="70%">
-              <PolarGrid stroke="#1e293b" />
-              <PolarAngleAxis dataKey="subject" tick={{ fill: '#94a3b8', fontSize: 10 }} />
-              <PolarRadiusAxis angle={90} domain={[0, 130]} tick={{ fill: '#475569', fontSize: 9 }} />
-              <Radar name="Accuracy %" dataKey="accuracy" stroke="#059669" fill="#059669" fillOpacity={0.2} />
-              <Radar name="Target" dataKey="target" stroke="#475569" fill="none" strokeDasharray="4 4" />
-            </RadarChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function ComparisonTab({ data }: {
-  data: ProjectData
-}) {
-  const benchmarks = [
-    { label: 'Hanscomb Class A', ...data.benchmarks.hanscomb, color: '#6366f1' },
-    { label: 'PLA Contractor', ...data.benchmarks.pla, color: '#334155' },
-    { label: 'BuildCode Engine', ...data.benchmarks.engine, color: '#059669' },
-  ]
-
-  return (
-    <div className="space-y-8">
-      {/* Benchmark Cards */}
-      <div className="grid lg:grid-cols-3 gap-6">
-        {benchmarks.map(b => (
-          <div key={b.label} className="rounded-xl border border-slate-800 bg-slate-900/50 p-6" style={{ borderLeftColor: b.color, borderLeftWidth: '3px' }}>
-            <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">{b.label}</p>
-            <p className="text-2xl font-bold text-white mb-1">{fmt(b.total)}</p>
-            <p className="text-sm text-slate-400">${b.cost_per_sf.toFixed(2)}/SF — {b.sf.toLocaleString()} SF</p>
-            <p className="text-xs text-slate-600 mt-2">{b.note}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* Section Comparison Table */}
-      <div className="rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden">
-        <div className="p-6 border-b border-slate-800">
-          <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Section-by-Section Comparison</h3>
-        </div>
-        <table className="w-full">
-          <thead>
-            <tr className="border-b border-slate-800 text-xs uppercase tracking-wider text-slate-500">
-              <th className="text-left p-4">Section</th>
-              <th className="text-right p-4">Engine</th>
-              <th className="text-right p-4">PLA Actual</th>
-              <th className="text-right p-4">Variance</th>
-              <th className="text-right p-4 w-40">Accuracy</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.sections.map((s, i) => {
-              const variance = s.engine - s.pla
-              const pct = s.pct
-              const barWidth = Math.min(pct, 120)
-              const barColor = pct >= 90 && pct <= 110 ? '#059669' : pct >= 80 ? '#ca8a04' : '#dc2626'
+          <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">Confidence Summary</h3>
+          <div className="space-y-4 mt-6">
+            {(['high', 'medium', 'low'] as const).map(level => {
+              const count = confidenceCounts[level] || 0
+              const pct = totalConfidence > 0 ? (count / totalConfidence * 100) : 0
               return (
-                <tr key={s.name} className="border-b border-slate-800/50 hover:bg-slate-800/30 transition-colors">
-                  <td className="p-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: SECTION_COLORS[i] }} />
-                      <span className="text-sm text-slate-300">{s.name}</span>
-                    </div>
-                  </td>
-                  <td className="text-right p-4 text-sm font-mono text-slate-300">{fmt(s.engine)}</td>
-                  <td className="text-right p-4 text-sm font-mono text-slate-500">{fmt(s.pla)}</td>
-                  <td className={`text-right p-4 text-sm font-mono ${variance >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
-                    {variance >= 0 ? '+' : ''}{fmtK(variance)}
-                  </td>
-                  <td className="p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="flex-1 h-2 rounded-full bg-slate-800 overflow-hidden">
-                        <div className="h-full rounded-full transition-all" style={{ width: `${Math.min(barWidth / 1.2, 100)}%`, backgroundColor: barColor }} />
-                      </div>
-                      <span className="text-xs font-mono w-12 text-right" style={{ color: barColor }}>{pct.toFixed(0)}%</span>
-                    </div>
-                  </td>
-                </tr>
+                <div key={level}>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="capitalize text-slate-300 font-medium">{level} Confidence</span>
+                    <span className="text-slate-400">{count} items ({pct.toFixed(0)}%)</span>
+                  </div>
+                  <div className="h-3 rounded-full bg-slate-800 overflow-hidden">
+                    <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: CONFIDENCE_COLORS[level] }} />
+                  </div>
+                </div>
               )
             })}
-            <tr className="bg-slate-800/30 font-semibold">
-              <td className="p-4 text-sm text-white">TOTAL</td>
-              <td className="text-right p-4 text-sm font-mono text-white">{fmt(data.summary.total_cost)}</td>
-              <td className="text-right p-4 text-sm font-mono text-slate-400">{fmt(data.benchmarks.pla.total)}</td>
-              <td className={`text-right p-4 text-sm font-mono ${data.summary.total_cost >= data.benchmarks.pla.total ? 'text-emerald-400' : 'text-red-400'}`}>
-                {data.summary.total_cost >= data.benchmarks.pla.total ? '+' : ''}{fmtK(data.summary.total_cost - data.benchmarks.pla.total)}
-              </td>
-              <td className="p-4">
-                <span className="text-sm font-mono text-emerald-400">{(data.summary.total_cost / data.benchmarks.pla.total * 100).toFixed(1)}%</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
   )
